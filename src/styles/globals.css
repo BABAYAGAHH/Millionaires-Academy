@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-warmWhite font-body text-charcoal antialiased;
+  background-image:
+    radial-gradient(circle at top left, rgba(200, 167, 93, 0.08), transparent 24%),
+    linear-gradient(180deg, rgba(247, 242, 234, 0.72), rgba(255, 253, 248, 0.96));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading text-softBlack;
+}
+
+::selection {
+  background: rgba(200, 167, 93, 0.35);
+  color: #050505;
+}
+
+@layer base {
+  * {
+    @apply border-neutralBorder;
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-mutedGold focus-visible:ring-offset-2 focus-visible:ring-offset-warmWhite;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .luxury-gradient {
+    background-image:
+      radial-gradient(circle at top left, rgba(200, 167, 93, 0.16), transparent 26%),
+      radial-gradient(circle at 90% 8%, rgba(15, 140, 131, 0.14), transparent 22%),
+      linear-gradient(135deg, #123c2f 0%, #0b2e24 100%);
+  }
+
+  .noise-bg {
+    position: relative;
+  }
+
+  .noise-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.24) 0.8px, transparent 0.8px);
+    background-size: 18px 18px;
+    opacity: 0.08;
+  }
+}

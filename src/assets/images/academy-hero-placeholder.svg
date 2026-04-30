@@ -1,0 +1,20 @@
+<svg width="960" height="760" viewBox="0 0 960 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="760" rx="44" fill="#123C2F" />
+  <rect x="44" y="44" width="872" height="672" rx="38" fill="url(#paint0_linear_21_4)" />
+  <circle cx="198" cy="170" r="94" fill="#F26A2E" fill-opacity="0.18" />
+  <circle cx="756" cy="178" r="118" fill="#C8A75D" fill-opacity="0.24" />
+  <rect x="88" y="100" width="332" height="560" rx="34" fill="#FFFDF8" fill-opacity="0.94" />
+  <rect x="470" y="136" width="392" height="124" rx="30" fill="#FFFDF8" fill-opacity="0.12" />
+  <rect x="470" y="294" width="392" height="150" rx="30" fill="#FFFDF8" fill-opacity="0.08" />
+  <rect x="470" y="486" width="288" height="102" rx="28" fill="#FFFDF8" fill-opacity="0.14" />
+  <text x="254" y="626" text-anchor="middle" fill="#123C2F" font-family="Playfair Display, serif" font-size="34" font-weight="700">Academy Visual</text>
+  <text x="666" y="210" text-anchor="middle" fill="#FFFDF8" font-family="Inter, sans-serif" font-size="28" font-weight="700">Millionaires Academy</text>
+  <text x="666" y="376" text-anchor="middle" fill="#FFFDF8" font-family="Inter, sans-serif" font-size="26" font-weight="600">Mentorship + Resources + Launch Systems</text>
+  <text x="612" y="550" fill="#FFFDF8" font-family="Inter, sans-serif" font-size="23" font-weight="700">Premium business education hub</text>
+  <defs>
+    <linearGradient id="paint0_linear_21_4" x1="60" y1="74" x2="896" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#123C2F" />
+      <stop offset="1" stop-color="#0F8C83" />
+    </linearGradient>
+  </defs>
+</svg>
