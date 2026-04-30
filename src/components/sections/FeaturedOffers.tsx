@@ -10,9 +10,9 @@ export const FeaturedOffers = () => (
     <Container>
       <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <SectionHeader
-          description="A curated mix of vendor guidance, launch blueprints, custom store education, and practical business resources."
+          description="Explore digital tools and business resources created to help you plan smarter, launch cleaner, and build with more structure."
           eyebrow="Featured Resources"
-          title="Start with one resource that supports your next move."
+          title="Start with the resource that supports your next move."
         />
         <Button href="/shop" variant="outline">
           Explore Resources

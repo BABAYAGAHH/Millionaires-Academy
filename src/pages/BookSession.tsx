@@ -120,7 +120,7 @@ export const BookSession = () => {
           <div className="grid gap-8 rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:grid-cols-[0.95fr_1.05fr] lg:p-10">
             <div>
               <SectionHeader
-                description="A real booking link can be connected later. For now, use the inquiry path below to request your session and share what kind of guidance you need."
+                description="Use the inquiry form below to request your session and share the kind of guidance you need. Millionaires Academy will follow up with the next booking steps."
                 eyebrow="Booking CTA"
                 title="Book Strategy Session"
               />

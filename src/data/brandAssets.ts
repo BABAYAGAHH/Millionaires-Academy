@@ -14,4 +14,8 @@ export const brandAssets = {
     leadMagnet:
       'https://res.cloudinary.com/dctjy0klg/image/upload/v1777555983/IMG_0018_z84pvi.jpg',
   },
+  testimonials: {
+    clientProof:
+      'https://res.cloudinary.com/dctjy0klg/image/upload/v1771173931/main-sample.png',
+  },
 }

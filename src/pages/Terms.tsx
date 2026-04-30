@@ -12,9 +12,9 @@ export const Terms = () => {
           <h1 className="text-4xl font-semibold text-softBlack">Terms & Conditions</h1>
           <div className="mt-8 space-y-6 text-sm leading-8 text-muted">
             <p>
-              These terms are general placeholders for Millionaires Academy and
-              should receive final legal review before the website is used in a
-              live business setting.
+              These terms outline the current business expectations for using
+              Millionaires Academy resources and services. Final legal review
+              will confirm any platform-specific language before launch.
             </p>
             <p>
               By purchasing digital products or submitting an application, users
@@ -26,7 +26,7 @@ export const Terms = () => {
               Digital products are intended for business education and practical
               support. Service outcomes depend on client implementation,
               readiness, and participation. Final payment, refund, and service
-              policies should be added during legal review.
+              policies will be confirmed during legal review.
             </p>
           </div>
         </div>

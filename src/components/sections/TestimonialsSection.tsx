@@ -1,32 +1,35 @@
 import { testimonials } from '../../data/testimonials'
 import { brandAssets } from '../../data/brandAssets'
 import { TestimonialCard } from '../cards/TestimonialCard'
+import { AnimatedSection } from '../common/AnimatedSection'
 import { Container } from '../common/Container'
 import { SectionHeader } from '../common/SectionHeader'
-import { AnimatedSection } from '../common/AnimatedSection'
 
 export const TestimonialsSection = () => (
   <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
     <Container>
-      <div className="grid gap-8 lg:grid-cols-[1fr_0.86fr] lg:items-center">
-        <SectionHeader
-          description="Placeholder testimonials can be replaced later with real client proof, but the layout is already ready for that level of trust."
-          eyebrow="Client Perspective"
-          title="Proof that clarity changes how founders move."
-        />
-        <div className="overflow-hidden rounded-[2rem] border border-neutralBorder bg-cream/72 p-4 shadow-soft">
-          <img
-            alt="Nickie Nicole, founder of Millionaires Academy"
-            className="aspect-[4/4.8] w-full rounded-[1.5rem] object-cover object-[center_18%]"
-            loading="lazy"
-            src={brandAssets.founder.testimonials}
+      <div className="rounded-[2rem] bg-cream/58 p-6 shadow-soft sm:p-8 lg:p-10">
+        <div className="grid gap-8 lg:grid-cols-[1fr_0.88fr] lg:items-start">
+          <SectionHeader
+            description="Every resource, session, and strategy inside Millionaires Academy is built to help entrepreneurs move with more structure, confidence, and direction."
+            eyebrow="CLIENT MOMENTUM"
+            title="Proof that clarity changes how founders move."
           />
+          <div className="overflow-hidden rounded-[2rem] border border-mutedGold/20 bg-warmWhite p-4 shadow-premium">
+            <img
+              alt="Client testimonial image for Millionaires Academy"
+              className="aspect-[4/5] w-full rounded-[1.5rem] object-cover object-[center_top] md:aspect-[5/4]"
+              loading="lazy"
+              src={brandAssets.testimonials.clientProof}
+            />
+          </div>
         </div>
-      </div>
-      <div className="mt-10 grid gap-6 md:grid-cols-2">
-        {testimonials.map((testimonial) => (
-          <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-        ))}
+
+        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {testimonials.map((testimonial) => (
+            <TestimonialCard key={testimonial.id} testimonial={testimonial} />
+          ))}
+        </div>
       </div>
     </Container>
   </AnimatedSection>

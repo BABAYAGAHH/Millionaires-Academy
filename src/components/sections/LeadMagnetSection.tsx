@@ -19,7 +19,7 @@ export const LeadMagnetSection = () => (
       <div className="grid gap-8 rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:grid-cols-[1fr_0.92fr] lg:p-10">
         <div>
           <SectionHeader
-            description="A practical checklist to help you organize your idea, vendor search, brand setup, product direction, and launch plan."
+            description="Start with a simple checklist that helps you organize your idea, clarify your offer, prepare your vendor search, and map your next business move."
             eyebrow="Free Resource"
             title="Get the Free Business Launch Checklist"
           />

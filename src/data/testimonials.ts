@@ -2,31 +2,24 @@ import type { Testimonial } from '../types'
 
 export const testimonials: Testimonial[] = [
   {
-    id: 'aspiring-boutique-owner',
+    id: 'emerging-founder',
     quote:
-      'Before Millionaires Academy, I had ideas but no structure. The resources helped me understand what to do next.',
-    name: 'Aspiring Boutique Owner',
-    role: 'Digital Resource Customer',
+      'Millionaires Academy gave me the structure I needed to stop overthinking and start building my business with clearer direction.',
+    name: 'Emerging Founder',
+    role: 'Business Launch Client',
   },
   {
-    id: 'cleaning-brand-founder',
+    id: 'online-store-owner',
     quote:
-      'The guidance felt honest, strategic, and easy to apply. I finally stopped second-guessing every move.',
-    name: 'Cleaning Brand Founder',
-    role: 'Mentorship Client',
-  },
-  {
-    id: 'shopify-launch-client',
-    quote:
-      'My store direction became so much clearer. I loved how premium and organized everything started to feel.',
+      'The resources helped me understand what I needed first, what could wait, and how to approach my next business move with confidence.',
     name: 'Online Store Owner',
-    role: 'Website Support Client',
+    role: 'Resource Client',
   },
   {
-    id: 'new-entrepreneur',
+    id: 'service-based-entrepreneur',
     quote:
-      'The academy helped me think about my business with more confidence and more intention. That changed everything.',
-    name: 'New Entrepreneur',
+      'The mentorship approach feels practical, honest, and focused. It gave me a clearer path for organizing my brand and offers.',
+    name: 'Service-Based Entrepreneur',
     role: 'Strategy Session Client',
   },
 ]

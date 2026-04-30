@@ -65,30 +65,34 @@ export const HeroSection = () => (
                     src={brandAssets.founder.hero}
                   />
                 </div>
-                <div className="rounded-[1.6rem] bg-white/92 p-5 text-emeraldDeep sm:p-6">
+                <div className="rounded-[1.6rem] border border-white/20 bg-forest/72 p-5 text-warmWhite backdrop-blur sm:p-6">
                   <div>
-                    <p className="font-heading text-xl text-softBlack">
+                    <p className="font-heading text-3xl text-warmWhite md:text-4xl">
                       Nickie Nicole
                     </p>
-                    <p className="text-xs font-semibold uppercase tracking-[0.24em] text-mutedGold">
+                    <p className="text-xs font-semibold uppercase tracking-[0.32em] text-mutedGold">
                       Founder &amp; Mentor
                     </p>
                   </div>
                   <p className="mt-6 text-xs font-semibold uppercase tracking-[0.24em] text-mutedGold">
                     Millionaires Academy
                   </p>
-                  <h2 className="mt-3 font-heading text-3xl leading-tight text-softBlack sm:text-[2.15rem]">
+                  <h2 className="mt-3 font-heading text-3xl leading-tight text-warmWhite sm:text-[2.15rem]">
                     Practical systems for ambitious founders.
                   </h2>
-                  <p className="mt-4 text-sm leading-7 text-charcoal">
+                  <p className="mt-6 max-w-xl text-base leading-8 text-cream/85">
                     Mentorship, vendor guidance, custom website support, and
                     launch blueprints designed to move your business from idea to
                     execution with more structure.
                   </p>
                   <div className="mt-6 flex flex-wrap gap-2">
-                    {['Mentorship', 'Resources', 'Website Support'].map((item) => (
+                    {[
+                      'Structured launch planning',
+                      'Vendor guidance',
+                      'Custom website support',
+                    ].map((item) => (
                       <span
-                        className="inline-flex items-center rounded-full bg-emeraldDeep/8 px-3 py-2 text-xs font-semibold tracking-[0.12em] text-emeraldDeep"
+                        className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-5 py-3 text-sm font-medium text-cream"
                         key={item}
                       >
                         {item}
@@ -96,20 +100,6 @@ export const HeroSection = () => (
                     ))}
                   </div>
                 </div>
-              </div>
-              <div className="mt-4 grid gap-3 sm:grid-cols-3">
-                {[
-                  'Structured launch planning',
-                  'Premium brand presentation',
-                  'Clear next-step guidance',
-                ].map((item) => (
-                  <div
-                    className="rounded-[1.4rem] border border-white/14 bg-white/10 px-4 py-4 text-sm font-medium text-warmWhite/86"
-                    key={item}
-                  >
-                    {item}
-                  </div>
-                ))}
               </div>
             </div>
           </div>

@@ -13,8 +13,8 @@ export const FinalCTA = () => (
           Your business does not need more confusion. It needs structure.
         </h2>
         <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-warmWhite/82 sm:text-lg">
-          Start with the resource, session, or support package that matches your
-          current business stage.
+          Your next level needs a clear system, not more confusion. Start with
+          the resource, session, or support path that fits your stage.
         </p>
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
           <Button href="/shop" size="lg" variant="secondary">

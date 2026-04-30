@@ -13,9 +13,9 @@ export const PrivacyPolicy = () => {
           <div className="mt-8 space-y-6 text-sm leading-8 text-muted">
             <p>
               Millionaires Academy respects your privacy and is committed to
-              handling your information with care. This is a general placeholder
-              privacy policy and should receive final legal review before the
-              website goes live for client use.
+              handling your information with care. This overview explains how
+              information shared through the website may be collected, used, and
+              protected while final legal language is prepared for launch.
             </p>
             <p>
               Information submitted through forms may include your name, contact
@@ -26,8 +26,8 @@ export const PrivacyPolicy = () => {
             <p>
               Digital resources, contact forms, and newsletters may later be
               connected to third-party tools for delivery, analytics, and email
-              communication. Final policy language should be updated once those
-              tools are selected and the client has completed legal review.
+              communication. Final legal review will confirm platform-specific
+              policy details before launch.
             </p>
           </div>
         </div>

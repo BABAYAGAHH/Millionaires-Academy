@@ -73,7 +73,7 @@ export const Navbar = () => {
               <Search className="h-4 w-4" />
             </button>
             <Link
-              aria-label="Cart placeholder with zero items"
+              aria-label="Cart with zero items"
               className="relative inline-flex h-11 w-11 items-center justify-center rounded-full border border-neutralBorder bg-white/80 text-emeraldDeep transition hover:border-emeraldDeep hover:bg-cream"
               to="/shop"
             >
