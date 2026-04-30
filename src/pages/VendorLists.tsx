@@ -38,9 +38,9 @@ export const VendorLists = () => {
         </Container>
       </AnimatedSection>
 
-      <AnimatedSection className="pt-24" id="vendor-resources">
+      <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20" id="vendor-resources">
         <Container>
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {vendorProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
@@ -54,7 +54,7 @@ export const VendorLists = () => {
         title="Questions about vendor resources?"
       />
 
-      <AnimatedSection className="pt-24">
+      <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
         <Container>
           <div className="rounded-[2rem] border border-neutralBorder bg-cream/72 p-8 shadow-soft lg:p-10">
             <SectionHeader

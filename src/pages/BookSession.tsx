@@ -11,7 +11,7 @@ import { usePageTitle } from '../utils/usePageTitle'
 const benefits = [
   { title: 'Focused guidance', icon: Compass },
   { title: 'Vendor and launch clarity', icon: Lightbulb },
-  { title: 'Shopify website direction', icon: NotebookPen },
+  { title: 'Custom website direction', icon: NotebookPen },
   { title: 'Actionable next steps', icon: CalendarDays },
 ]
 
@@ -23,7 +23,7 @@ const whoShouldBook = [
 
 const whatToPrepare = [
   'A short overview of your business idea or current stage',
-  'Any questions about vendors, Shopify, branding, or launch structure',
+  'Any questions about vendors, custom websites, branding, or launch structure',
   'A realistic picture of what feels blocked right now',
 ]
 
@@ -40,7 +40,7 @@ export const BookSession = () => {
         <Container>
           <div className="rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:p-10">
             <SectionHeader
-              description="Get focused guidance for your business idea, vendor search, Shopify website direction, or launch plan."
+              description="Get focused guidance for your business idea, vendor search, custom website direction, or launch plan."
               eyebrow="Book a Strategy Session"
               title="Book a One-on-One Business Strategy Session"
             />
@@ -53,7 +53,7 @@ export const BookSession = () => {
         </Container>
       </AnimatedSection>
 
-      <AnimatedSection className="pt-24">
+      <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
         <Container>
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {benefits.map((benefit) => (
@@ -73,7 +73,7 @@ export const BookSession = () => {
         </Container>
       </AnimatedSection>
 
-      <AnimatedSection className="pt-24">
+      <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
         <Container>
           <div className="grid gap-6 lg:grid-cols-2">
             <article className="rounded-3xl border border-neutralBorder bg-white p-8 shadow-soft">
@@ -104,7 +104,7 @@ export const BookSession = () => {
         </Container>
       </AnimatedSection>
 
-      <AnimatedSection className="pt-24" id="booking">
+      <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20" id="booking">
         <Container>
           <div className="grid gap-8 rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:grid-cols-[0.95fr_1.05fr] lg:p-10">
             <div>

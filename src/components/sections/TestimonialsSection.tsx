@@ -5,7 +5,7 @@ import { SectionHeader } from '../common/SectionHeader'
 import { AnimatedSection } from '../common/AnimatedSection'
 
 export const TestimonialsSection = () => (
-  <AnimatedSection className="pt-24">
+  <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
     <Container>
       <SectionHeader
         centered
@@ -13,7 +13,7 @@ export const TestimonialsSection = () => (
         eyebrow="Client Perspective"
         title="Proof that clarity changes how founders move."
       />
-      <div className="mt-12 grid gap-6 md:grid-cols-2">
+      <div className="mt-10 grid gap-6 md:grid-cols-2">
         {testimonials.map((testimonial) => (
           <TestimonialCard key={testimonial.id} testimonial={testimonial} />
         ))}

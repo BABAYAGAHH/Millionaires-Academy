@@ -28,7 +28,7 @@ export const Footer = () => (
             Millionaires Academy is a premium business education and resource
             platform created to help ambitious entrepreneurs build with clarity,
             structure, and confidence. From vendor resources to digital
-            blueprints, Shopify website support, and one-on-one strategy
+            blueprints, custom website support, and one-on-one strategy
             sessions, the academy gives business owners practical tools for
             moving from idea to execution.
           </p>

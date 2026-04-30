@@ -6,11 +6,11 @@ import { Container } from '../common/Container'
 import { SectionHeader } from '../common/SectionHeader'
 
 export const FeaturedOffers = () => (
-  <AnimatedSection className="pt-24">
+  <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
     <Container>
       <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <SectionHeader
-          description="A curated mix of vendor guidance, launch blueprints, Shopify education, and practical business resources."
+          description="A curated mix of vendor guidance, launch blueprints, custom store education, and practical business resources."
           eyebrow="Featured Resources"
           title="Start with one resource that supports your next move."
         />
@@ -18,7 +18,7 @@ export const FeaturedOffers = () => (
           Explore Resources
         </Button>
       </div>
-      <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {products
           .filter((product) => product.featured)
           .slice(0, 6)

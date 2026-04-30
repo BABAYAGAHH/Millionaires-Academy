@@ -23,9 +23,9 @@ export const Services = () => {
         </Container>
       </AnimatedSection>
 
-      <AnimatedSection className="pt-24">
+      <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
         <Container>
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
             {services.map((service) => (
               <ServiceCard key={service.id} service={service} />
             ))}
@@ -33,7 +33,7 @@ export const Services = () => {
         </Container>
       </AnimatedSection>
 
-      <AnimatedSection className="pt-24">
+      <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
         <Container>
           <div className="luxury-gradient rounded-[2rem] px-8 py-12 text-center text-warmWhite shadow-premium">
             <h2 className="text-3xl font-semibold text-warmWhite sm:text-4xl">

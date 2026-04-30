@@ -13,13 +13,8 @@ export const PageShell = () => {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
-      <main className="flex-1 pb-24 md:pb-0">
-        <motion.div
-          animate={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: 10 }}
-          key={location.pathname}
-          transition={{ duration: 0.35, ease: 'easeOut' }}
-        >
+      <main className="flex-1 overflow-x-hidden pb-28 sm:pb-32 md:pb-0">
+        <motion.div initial={false} key={location.pathname}>
           <Outlet />
         </motion.div>
       </main>

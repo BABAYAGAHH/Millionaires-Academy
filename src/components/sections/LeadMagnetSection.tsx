@@ -13,7 +13,7 @@ const checklistPoints = [
 ]
 
 export const LeadMagnetSection = () => (
-  <AnimatedSection className="pt-24">
+  <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
     <Container>
       <div className="grid gap-8 rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:grid-cols-[1fr_0.92fr] lg:p-10">
         <div>

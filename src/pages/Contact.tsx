@@ -29,7 +29,7 @@ export const Contact = () => {
         </Container>
       </AnimatedSection>
 
-      <AnimatedSection className="pt-24">
+      <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
         <Container>
           <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
             <ApplicationForm />

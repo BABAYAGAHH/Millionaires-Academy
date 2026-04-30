@@ -19,7 +19,7 @@ const noItems = [
 ]
 
 export const QualificationSection = () => (
-  <AnimatedSection className="pt-24">
+  <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
     <Container>
       <SectionHeader
         centered
@@ -27,7 +27,7 @@ export const QualificationSection = () => (
         eyebrow="Alignment Check"
         title="Is Millionaires Academy Right for You?"
       />
-      <div className="mt-12 grid gap-6 lg:grid-cols-2">
+      <div className="mt-10 grid gap-6 lg:grid-cols-2">
         <article className="rounded-3xl border border-neutralBorder bg-white p-8 shadow-soft">
           <h3 className="text-2xl font-semibold text-softBlack">
             Yes, this is for you if:

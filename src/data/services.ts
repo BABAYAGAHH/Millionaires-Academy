@@ -33,17 +33,17 @@ export const services: Service[] = [
   },
   {
     id: 'shopify-support',
-    title: 'Shopify Website Support',
+    title: 'Custom Website Support',
     description:
-      'Launch a premium online store with clean structure, polished visuals, and conversion-focused sections.',
+      'Launch a premium online presence with clean structure, polished visuals, and conversion-focused sections.',
     includes: [
       'Premium homepage structure',
       'Product organization',
       'Brand styling direction',
       'Launch preparation support',
     ],
-    ctaLabel: 'View Shopify Support',
-    ctaHref: '/shopify-website',
+    ctaLabel: 'View Website Support',
+    ctaHref: '/custom-website',
     iconName: 'Monitor',
   },
   {

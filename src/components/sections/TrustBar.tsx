@@ -5,12 +5,12 @@ import { Container } from '../common/Container'
 const items = [
   'Instant digital resources',
   'One-on-one mentorship',
-  'Shopify website support',
+  'Custom website support',
   'Vendor guidance and sourcing tools',
 ]
 
 export const TrustBar = () => (
-  <AnimatedSection className="pt-8">
+  <AnimatedSection className="pt-6 sm:pt-8">
     <Container>
       <div className="overflow-hidden rounded-[1.75rem] border border-neutralBorder bg-white px-4 py-4 shadow-soft">
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

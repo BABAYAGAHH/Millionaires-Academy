@@ -13,10 +13,9 @@ export const AnimatedSection = ({
 }: AnimatedSectionProps) => (
   <motion.section
     className={cn(className)}
-    initial={{ opacity: 0, y: 28 }}
-    transition={{ duration: 0.6, ease: 'easeOut' }}
-    viewport={{ once: true, amount: 0.2 }}
-    whileInView={{ opacity: 1, y: 0 }}
+    animate={{ opacity: 1, y: 0 }}
+    initial={{ opacity: 0, y: 20 }}
+    transition={{ duration: 0.45, ease: 'easeOut' }}
     {...props}
   >
     {children}

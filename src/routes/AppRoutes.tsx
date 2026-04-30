@@ -20,6 +20,7 @@ export const AppRoutes = () => (
       <Route element={<About />} path="/about" />
       <Route element={<Services />} path="/services" />
       <Route element={<VendorLists />} path="/vendor-lists" />
+      <Route element={<ShopifyWebsite />} path="/custom-website" />
       <Route element={<ShopifyWebsite />} path="/shopify-website" />
       <Route element={<BookSession />} path="/book-session" />
       <Route element={<Shop />} path="/shop" />

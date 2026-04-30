@@ -38,10 +38,10 @@ export const packages: Package[] = [
     name: 'Premium Launch Partner',
     priceLabel: 'Custom',
     description:
-      'For serious clients who want high-touch support with business structure, Shopify planning, and launch preparation.',
+      'For serious clients who want high-touch support with business structure, custom website planning, and launch preparation.',
     includes: [
       'Business strategy support',
-      'Shopify website setup planning',
+      'Custom website setup planning',
       'Product and category structure',
       'Launch guidance',
       'Premium implementation support',

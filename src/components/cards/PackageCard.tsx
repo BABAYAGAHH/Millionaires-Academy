@@ -70,7 +70,11 @@ export const PackageCard = ({ item }: PackageCardProps) => (
       ))}
     </ul>
     <div className="mt-8 pt-2">
-      <Button href={item.ctaHref} variant={item.highlighted ? 'secondary' : 'outline'}>
+      <Button
+        className="w-full sm:w-auto"
+        href={item.ctaHref}
+        variant={item.highlighted ? 'secondary' : 'outline'}
+      >
         {item.ctaLabel}
       </Button>
     </div>

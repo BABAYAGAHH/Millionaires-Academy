@@ -13,8 +13,8 @@ const choices = [
   {
     title: 'I need a premium website',
     description:
-      'Explore premium Shopify support if you need a more polished storefront.',
-    href: '/shopify-website',
+      'Explore premium custom website support if you need a more polished storefront or service site.',
+    href: '/custom-website',
   },
   {
     title: 'I need mentorship',
@@ -37,15 +37,15 @@ const choices = [
 ]
 
 export const StartHereSection = () => (
-  <AnimatedSection className="pt-24">
+  <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
     <Container>
       <SectionHeader
         centered
-        description="Whether you need vendors, mentorship, a Shopify website, or business resources, start with the path that matches your current stage."
+        description="Whether you need vendors, mentorship, a custom website, or business resources, start with the path that matches your current stage."
         eyebrow="Start Here"
         title="Choose Your Next Move"
       />
-      <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
         {choices.map((choice) => (
           <ChoiceCard
             description={choice.description}

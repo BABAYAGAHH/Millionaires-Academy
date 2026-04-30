@@ -22,9 +22,9 @@ const cards: Array<{
     icon: Users,
   },
   {
-    title: 'Shopify Website Support',
+    title: 'Custom Website Support',
     description:
-      'Launch a premium online store with clean structure, polished visuals, and conversion-focused sections.',
+      'Launch a premium online store or service website with clean structure, polished visuals, and conversion-focused sections.',
     icon: Monitor,
   },
   {
@@ -36,7 +36,7 @@ const cards: Array<{
 ]
 
 export const WaysToHelp = () => (
-  <AnimatedSection className="pt-24">
+  <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
     <Container>
       <SectionHeader
         centered
@@ -44,7 +44,7 @@ export const WaysToHelp = () => (
         eyebrow="How The Academy Helps"
         title="Ways Millionaires Academy Can Help You"
       />
-      <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
         {cards.map((card) => (
           <article
             className="rounded-3xl border border-neutralBorder bg-white p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-premium"

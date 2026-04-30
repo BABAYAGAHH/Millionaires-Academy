@@ -52,7 +52,7 @@ export const Shop = () => {
         <Container>
           <div className="rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:p-10">
             <SectionHeader
-              description="Explore vendor resources, launch guides, Shopify support, and business tools created to help you build with structure."
+              description="Explore vendor resources, launch guides, custom website support, and business tools created to help you build with structure."
               eyebrow="Resources"
               title="Business Resources & Digital Blueprints"
             />
@@ -113,7 +113,7 @@ export const Shop = () => {
       <AnimatedSection className="pt-12">
         <Container>
           {filteredProducts.length ? (
-            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {filteredProducts.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}

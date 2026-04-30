@@ -5,7 +5,7 @@ import { Button } from '../common/Button'
 const services = [
   'One-on-One Mentorship',
   'Vendor Guidance',
-  'Shopify Website Support',
+  'Custom Website Support',
   'Digital Business Resources',
   'Business Launch Strategy',
   'Not Sure Yet',

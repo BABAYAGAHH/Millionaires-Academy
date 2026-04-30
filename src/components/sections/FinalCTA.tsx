@@ -3,7 +3,7 @@ import { Button } from '../common/Button'
 import { Container } from '../common/Container'
 
 export const FinalCTA = () => (
-  <AnimatedSection className="pt-24">
+  <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
     <Container>
       <div className="luxury-gradient overflow-hidden rounded-[2rem] px-8 py-12 text-center text-warmWhite shadow-premium sm:px-10 sm:py-16">
         <p className="text-xs font-semibold uppercase tracking-[0.34em] text-mutedGold">

@@ -22,7 +22,7 @@ export const FAQSection = ({
   const [openId, setOpenId] = useState<string | null>(items[0]?.id ?? null)
 
   return (
-    <AnimatedSection className="pt-24">
+    <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
       <Container>
         <SectionHeader
           centered
@@ -30,7 +30,7 @@ export const FAQSection = ({
           eyebrow={eyebrow}
           title={title}
         />
-        <div className="mx-auto mt-12 max-w-3xl space-y-4">
+        <div className="mx-auto mt-10 max-w-3xl space-y-4">
           {items.map((item) => {
             const isOpen = item.id === openId
 

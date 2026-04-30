@@ -25,7 +25,7 @@ This project is a premium business academy and digital commerce hub for:
 
 - business mentorship
 - vendor guidance
-- Shopify website support
+- Custom website support
 - digital business resources
 - launch strategy support
 

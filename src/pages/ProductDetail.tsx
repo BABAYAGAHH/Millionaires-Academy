@@ -75,7 +75,7 @@ export const ProductDetail = () => {
         </Container>
       </AnimatedSection>
 
-      <AnimatedSection className="pt-24">
+      <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
         <Container>
           <div className="grid gap-6 lg:grid-cols-3">
             <article className="rounded-3xl border border-neutralBorder bg-white p-7 shadow-soft lg:col-span-2">

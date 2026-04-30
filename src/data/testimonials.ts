@@ -20,7 +20,7 @@ export const testimonials: Testimonial[] = [
     quote:
       'My store direction became so much clearer. I loved how premium and organized everything started to feel.',
     name: 'Online Store Owner',
-    role: 'Shopify Support Client',
+    role: 'Website Support Client',
   },
   {
     id: 'new-entrepreneur',

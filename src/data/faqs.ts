@@ -17,10 +17,10 @@ export const faqs: FAQ[] = [
   },
   {
     id: 'shopify-websites',
-    question: 'Do you build Shopify websites?',
+    question: 'Do you help with custom websites and online stores?',
     answer:
-      'Yes. Millionaires Academy offers Shopify website support and planning for business owners who want a polished, more premium online store.',
-    category: 'shopify',
+      'Yes. Millionaires Academy offers custom website support and planning for business owners who want a polished, more premium online presence.',
+    category: 'website',
   },
   {
     id: 'vendor-updates',

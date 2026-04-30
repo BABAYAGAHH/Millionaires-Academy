@@ -31,23 +31,23 @@ export const products: Product[] = [
   {
     id: 'shopify-masterclass',
     slug: 'shopify-masterclass',
-    title: 'Shopify Masterclass',
-    category: 'Academy Masterclass',
+    title: 'Custom Store Masterclass',
+    category: 'Custom Store Education',
     price: 129.99,
     priceLabel: '$129.99',
     image: shopifyPlaceholder,
     shortDescription:
-      'A practical Millionaires Academy guide to understanding how to build and organize your Shopify store.',
+      'A practical Millionaires Academy guide to understanding how to build and organize your custom online store.',
     longDescription:
-      'The Millionaires Academy Shopify Masterclass walks through the core structure of a polished online store, from product setup to homepage direction, so you can launch with more clarity and less overwhelm.',
+      'The Millionaires Academy Custom Store Masterclass walks through the core structure of a polished online store, from product setup to homepage direction, so you can launch with more clarity and less overwhelm.',
     includes: [
-      'Store setup guidance',
+      'Custom store setup guidance',
       'Product and category planning',
       'Homepage structure',
       'Launch checklist',
     ],
     whoItIsFor:
-      'Business owners who want to understand store setup, customer flow, and how to structure Shopify the right way before launch.',
+      'Business owners who want to understand store setup, customer flow, and how to structure a custom online store the right way before launch.',
     deliveryMethod: 'Digital course access after purchase.',
     featured: true,
     checkoutUrl: undefined,
@@ -55,17 +55,17 @@ export const products: Product[] = [
   {
     id: 'custom-shopify-website',
     slug: 'custom-shopify-website',
-    title: 'Custom Shopify Website',
-    category: 'Shopify Support',
+    title: 'Custom Store / Website Build',
+    category: 'Website Support',
     price: 599.99,
     priceLabel: 'Starting at $599.99',
     image: shopifyPlaceholder,
     shortDescription:
-      'Premium Shopify website support from Millionaires Academy for business owners ready to launch professionally.',
+      'Premium custom website support from Millionaires Academy for business owners ready to launch professionally.',
     longDescription:
-      'This Millionaires Academy offer is for founders who need a more elevated, structured Shopify experience with premium page direction, product organization, and launch-ready presentation.',
+      'This Millionaires Academy offer is for founders who need a more elevated, structured online experience with premium page direction, offer organization, and launch-ready presentation.',
     includes: [
-      'Shopify structure planning',
+      'Custom website planning',
       'Homepage layout guidance',
       'Product and category setup direction',
       'Brand styling support',
