@@ -1,4 +1,4 @@
-import founderPlaceholder from '../assets/images/founder-placeholder.svg'
+import { brandAssets } from '../data/brandAssets'
 import { AnimatedSection } from '../components/common/AnimatedSection'
 import { Button } from '../components/common/Button'
 import { Container } from '../components/common/Container'
@@ -28,11 +28,14 @@ export const About = () => {
               />
             </div>
             <div className="rounded-[1.75rem] bg-cream/72 p-4">
-              <img
-                alt="Founder placeholder for Millionaires Academy"
-                className="h-full w-full rounded-[1.5rem] object-cover"
-                src={founderPlaceholder}
-              />
+              <div className="overflow-hidden rounded-[1.5rem]">
+                <img
+                  alt="Nickie Nicole, founder of Millionaires Academy"
+                  className="aspect-[4/5] w-full object-cover object-[center_18%]"
+                  loading="lazy"
+                  src={brandAssets.founder.about}
+                />
+              </div>
             </div>
           </div>
         </Container>

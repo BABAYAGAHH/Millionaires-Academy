@@ -3,6 +3,7 @@ import { AnimatedSection } from '../components/common/AnimatedSection'
 import { Button } from '../components/common/Button'
 import { Container } from '../components/common/Container'
 import { SectionHeader } from '../components/common/SectionHeader'
+import { brandAssets } from '../data/brandAssets'
 import { services } from '../data/services'
 import { usePageTitle } from '../utils/usePageTitle'
 
@@ -13,12 +14,22 @@ export const Services = () => {
     <>
       <AnimatedSection className="pt-10 sm:pt-14">
         <Container>
-          <div className="rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:p-10">
-            <SectionHeader
-              description="Structured support inside Millionaires Academy for entrepreneurs who need practical direction, professional guidance, and clearer next steps."
-              eyebrow="Services"
-              title="Professional support for founders building with intention."
-            />
+          <div className="grid gap-8 rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:p-10">
+            <div>
+              <SectionHeader
+                description="Structured support inside Millionaires Academy for entrepreneurs who need practical direction, professional guidance, and clearer next steps."
+                eyebrow="Services"
+                title="Professional support for founders building with intention."
+              />
+            </div>
+            <div className="overflow-hidden rounded-[1.75rem] bg-cream/72 p-4">
+              <img
+                alt="Nickie Nicole, founder of Millionaires Academy"
+                className="aspect-[4/4.8] w-full rounded-[1.5rem] object-cover object-[center_18%]"
+                loading="lazy"
+                src={brandAssets.founder.services}
+              />
+            </div>
           </div>
         </Container>
       </AnimatedSection>

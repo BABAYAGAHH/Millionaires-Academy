@@ -1,5 +1,5 @@
 import { ArrowRight, Check } from 'lucide-react'
-import founderPlaceholder from '../../assets/images/founder-placeholder.svg'
+import { brandAssets } from '../../data/brandAssets'
 import { AnimatedSection } from '../common/AnimatedSection'
 import { Badge } from '../common/Badge'
 import { Button } from '../common/Button'
@@ -56,13 +56,16 @@ export const HeroSection = () => (
             <div className="absolute -left-6 top-10 hidden h-24 w-24 rounded-full bg-mutedGold/18 blur-3xl lg:block" />
             <div className="absolute -right-8 bottom-10 hidden h-28 w-28 rounded-full bg-teal/20 blur-3xl lg:block" />
             <div className="relative rounded-[2rem] border border-white/14 bg-white/8 p-4 shadow-premium backdrop-blur-sm sm:p-5">
-              <div className="rounded-[1.6rem] bg-white/92 p-5 text-emeraldDeep sm:p-6">
-                <div className="flex items-center gap-4">
+              <div className="grid gap-5 md:grid-cols-[0.82fr_1fr] md:items-center">
+                <div className="overflow-hidden rounded-[1.6rem] border border-white/12 bg-cream/80">
                   <img
-                    alt="Founder portrait placeholder for Millionaires Academy"
-                    className="h-14 w-14 rounded-2xl object-cover"
-                    src={founderPlaceholder}
+                    alt="Nickie Nicole, founder of Millionaires Academy"
+                    className="aspect-[4/5] w-full object-cover object-[center_18%]"
+                    fetchPriority="high"
+                    src={brandAssets.founder.hero}
                   />
+                </div>
+                <div className="rounded-[1.6rem] bg-white/92 p-5 text-emeraldDeep sm:p-6">
                   <div>
                     <p className="font-heading text-xl text-softBlack">
                       Nickie Nicole
@@ -71,27 +74,27 @@ export const HeroSection = () => (
                       Founder &amp; Mentor
                     </p>
                   </div>
-                </div>
-                <p className="mt-6 text-xs font-semibold uppercase tracking-[0.24em] text-mutedGold">
-                  Millionaires Academy
-                </p>
-                <h2 className="mt-3 font-heading text-3xl leading-tight text-softBlack sm:text-[2.15rem]">
-                  Practical systems for ambitious founders.
-                </h2>
-                <p className="mt-4 text-sm leading-7 text-charcoal">
-                  Mentorship, vendor guidance, custom website support, and launch
-                  blueprints designed to move your business from idea to
-                  execution with more structure.
-                </p>
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {['Mentorship', 'Resources', 'Website Support'].map((item) => (
-                    <span
-                      className="inline-flex items-center rounded-full bg-emeraldDeep/8 px-3 py-2 text-xs font-semibold tracking-[0.12em] text-emeraldDeep"
-                      key={item}
-                    >
-                      {item}
-                    </span>
-                  ))}
+                  <p className="mt-6 text-xs font-semibold uppercase tracking-[0.24em] text-mutedGold">
+                    Millionaires Academy
+                  </p>
+                  <h2 className="mt-3 font-heading text-3xl leading-tight text-softBlack sm:text-[2.15rem]">
+                    Practical systems for ambitious founders.
+                  </h2>
+                  <p className="mt-4 text-sm leading-7 text-charcoal">
+                    Mentorship, vendor guidance, custom website support, and
+                    launch blueprints designed to move your business from idea to
+                    execution with more structure.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {['Mentorship', 'Resources', 'Website Support'].map((item) => (
+                      <span
+                        className="inline-flex items-center rounded-full bg-emeraldDeep/8 px-3 py-2 text-xs font-semibold tracking-[0.12em] text-emeraldDeep"
+                        key={item}
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
               <div className="mt-4 grid gap-3 sm:grid-cols-3">

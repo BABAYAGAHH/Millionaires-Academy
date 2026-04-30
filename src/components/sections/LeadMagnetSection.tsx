@@ -3,6 +3,7 @@ import { AnimatedSection } from '../common/AnimatedSection'
 import { Container } from '../common/Container'
 import { SectionHeader } from '../common/SectionHeader'
 import { LeadCaptureForm } from '../forms/LeadCaptureForm'
+import { brandAssets } from '../../data/brandAssets'
 
 const checklistPoints = [
   'Organize your business idea',
@@ -31,8 +32,18 @@ export const LeadMagnetSection = () => (
             ))}
           </ul>
         </div>
-        <div className="rounded-[1.75rem] bg-cream/78 p-6">
-          <LeadCaptureForm />
+        <div className="space-y-4">
+          <div className="overflow-hidden rounded-[1.75rem] border border-neutralBorder bg-cream/78 p-3 shadow-soft">
+            <img
+              alt="Nickie Nicole, founder of Millionaires Academy"
+              className="aspect-[4/4.8] w-full rounded-[1.25rem] object-cover object-[center_18%]"
+              loading="lazy"
+              src={brandAssets.founder.leadMagnet}
+            />
+          </div>
+          <div className="rounded-[1.75rem] bg-cream/78 p-6">
+            <LeadCaptureForm />
+          </div>
         </div>
       </div>
     </Container>

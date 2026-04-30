@@ -5,6 +5,7 @@ import { Button } from '../components/common/Button'
 import { Container } from '../components/common/Container'
 import { SectionHeader } from '../components/common/SectionHeader'
 import { FAQSection } from '../components/sections/FAQSection'
+import { brandAssets } from '../data/brandAssets'
 import { faqs } from '../data/faqs'
 import { usePageTitle } from '../utils/usePageTitle'
 
@@ -38,16 +39,26 @@ export const BookSession = () => {
     <>
       <AnimatedSection className="pt-10 sm:pt-14">
         <Container>
-          <div className="rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:p-10">
-            <SectionHeader
-              description="Get focused guidance for your business idea, vendor search, custom website direction, or launch plan."
-              eyebrow="Book a Strategy Session"
-              title="Book a One-on-One Business Strategy Session"
-            />
-            <div className="mt-8">
-              <Button href="/contact" variant="secondary">
-                Book Strategy Session
-              </Button>
+          <div className="grid gap-8 rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:p-10">
+            <div>
+              <SectionHeader
+                description="Get focused guidance for your business idea, vendor search, custom website direction, or launch plan."
+                eyebrow="Book a Strategy Session"
+                title="Book a One-on-One Business Strategy Session"
+              />
+              <div className="mt-8">
+                <Button href="/contact" variant="secondary">
+                  Book Strategy Session
+                </Button>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-[1.75rem] bg-cream/72 p-4">
+              <img
+                alt="Nickie Nicole, founder of Millionaires Academy"
+                className="aspect-[4/4.8] w-full rounded-[1.5rem] object-cover object-[center_18%]"
+                loading="lazy"
+                src={brandAssets.founder.mentorship}
+              />
             </div>
           </div>
         </Container>

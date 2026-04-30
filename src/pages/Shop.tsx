@@ -5,6 +5,7 @@ import { AnimatedSection } from '../components/common/AnimatedSection'
 import { Container } from '../components/common/Container'
 import { EmptyState } from '../components/common/EmptyState'
 import { SectionHeader } from '../components/common/SectionHeader'
+import { brandAssets } from '../data/brandAssets'
 import { products } from '../data/products'
 import { cn } from '../utils/cn'
 import { usePageTitle } from '../utils/usePageTitle'
@@ -50,12 +51,22 @@ export const Shop = () => {
     <>
       <AnimatedSection className="pt-10 sm:pt-14">
         <Container>
-          <div className="rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:p-10">
-            <SectionHeader
-              description="Explore vendor resources, launch guides, custom website support, and business tools created to help you build with structure."
-              eyebrow="Resources"
-              title="Business Resources & Digital Blueprints"
-            />
+          <div className="grid gap-8 rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:grid-cols-[1.03fr_0.97fr] lg:items-center lg:p-10">
+            <div>
+              <SectionHeader
+                description="Explore vendor resources, launch guides, custom website support, and business tools created to help you build with structure."
+                eyebrow="Resources"
+                title="Business Resources & Digital Blueprints"
+              />
+            </div>
+            <div className="overflow-hidden rounded-[1.75rem] bg-cream/72 p-4">
+              <img
+                alt="Nickie Nicole, founder of Millionaires Academy"
+                className="aspect-[4/4.8] w-full rounded-[1.5rem] object-cover object-[center_18%]"
+                loading="lazy"
+                src={brandAssets.founder.resources}
+              />
+            </div>
           </div>
         </Container>
       </AnimatedSection>
