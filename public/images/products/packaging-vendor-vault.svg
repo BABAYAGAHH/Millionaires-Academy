@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="72" fill="#FFFDF8"/>
+  <rect x="80" y="80" width="1040" height="740" rx="56" fill="#0B2E24"/>
+  <path d="M240 320L600 150L960 320V650L600 800L240 650V320Z" fill="#F7F2EA"/>
+  <path d="M240 320L600 486L960 320" stroke="#C8A75D" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M600 486V800" stroke="#C8A75D" stroke-width="18" stroke-linecap="round"/>
+  <text x="292" y="410" fill="#123C2F" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="800" letter-spacing="5">PACKAGING</text>
+  <text x="324" y="500" fill="#050505" font-family="Georgia, serif" font-size="78" font-weight="700">Vendor Vault</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="72" fill="#F7F2EA"/>
+  <rect x="86" y="86" width="1028" height="728" rx="52" fill="#FFFDF8" stroke="#E9E1D6" stroke-width="6"/>
+  <rect x="170" y="180" width="860" height="130" rx="28" fill="#123C2F"/>
+  <text x="220" y="260" fill="#FFFDF8" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800">BOUTIQUE VENDOR</text>
+  <text x="220" y="440" fill="#050505" font-family="Georgia, serif" font-size="88" font-weight="700">Starter List</text>
+  <rect x="220" y="532" width="250" height="250" rx="34" fill="#C8A75D" opacity="0.32"/>
+  <rect x="500" y="532" width="250" height="250" rx="34" fill="#0F8C83" opacity="0.22"/>
+  <rect x="780" y="532" width="250" height="250" rx="34" fill="#F26A2E" opacity="0.24"/>
+</svg>

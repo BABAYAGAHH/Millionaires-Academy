@@ -1,0 +1,11 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="72" fill="#F7F2EA"/>
+  <rect x="130" y="110" width="940" height="680" rx="52" fill="#FFFDF8" stroke="#E9E1D6" stroke-width="6"/>
+  <rect x="226" y="196" width="748" height="160" rx="34" fill="#123C2F"/>
+  <text x="286" y="296" fill="#FFFDF8" font-family="Inter, Arial, sans-serif" font-size="50" font-weight="800">PRICING CALCULATOR</text>
+  <rect x="226" y="430" width="168" height="116" rx="24" fill="#C8A75D" opacity="0.32"/>
+  <rect x="430" y="430" width="168" height="116" rx="24" fill="#0F8C83" opacity="0.24"/>
+  <rect x="634" y="430" width="168" height="116" rx="24" fill="#F26A2E" opacity="0.24"/>
+  <rect x="226" y="586" width="576" height="58" rx="29" fill="#E9E1D6"/>
+  <text x="850" y="636" fill="#123C2F" font-family="Georgia, serif" font-size="120" font-weight="700">$</text>
+</svg>

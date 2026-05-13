@@ -1,26 +1,21 @@
 import type { NavigationItem } from '../types'
 
 export const navigationItems: NavigationItem[] = [
+  { label: 'Products', href: '/shop' },
   { label: 'About', href: '/about' },
-  { label: 'Vendor Guidance', href: '/vendor-lists' },
-  { label: 'Book Session', href: '/book-session' },
-  { label: 'Services', href: '/services' },
-  { label: 'Custom Website', href: '/custom-website' },
-  { label: 'Resources', href: '/shop' },
   { label: 'Contact', href: '/contact' },
 ]
 
 export const footerQuickLinks: NavigationItem[] = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Services', href: '/services' },
-  { label: 'Resources', href: '/shop' },
-  { label: 'Book Session', href: '/book-session' },
+  { label: 'Products', href: '/shop' },
+  { label: 'Cart', href: '/cart' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export const footerOfferLinks: NavigationItem[] = [
-  { label: 'Vendor Guidance', href: '/vendor-lists' },
-  { label: 'Custom Website', href: '/custom-website' },
-  { label: 'Strategy Sessions', href: '/book-session' },
-  { label: 'Digital Blueprints', href: '/shop' },
+  { label: 'Digital Courses', href: '/shop' },
+  { label: 'Vendor Lists', href: '/shop' },
+  { label: 'Blueprints', href: '/shop' },
+  { label: 'Business Tools', href: '/shop' },
 ]

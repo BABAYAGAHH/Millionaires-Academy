@@ -2,19 +2,24 @@ import { useState } from 'react'
 import { Menu, Search, ShoppingBag, X } from 'lucide-react'
 import { Link, NavLink } from 'react-router-dom'
 import logoPlaceholder from '../../assets/images/logo-placeholder.svg'
+import { useCart } from '../../context/cartStore'
 import { navigationItems } from '../../data/navigation'
 import { cn } from '../../utils/cn'
-import { Button } from '../common/Button'
 import { Container } from '../common/Container'
 import { SearchOverlay } from './SearchOverlay'
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
+  const { openCart, totalItems } = useCart()
   const closeMenu = () => setIsOpen(false)
   const openSearch = () => {
     setIsOpen(false)
     setSearchOpen(true)
+  }
+  const handleOpenCart = () => {
+    setIsOpen(false)
+    openCart()
   }
 
   return (
@@ -37,7 +42,7 @@ export const Navbar = () => {
                   Millionaires Academy
                 </span>
                 <span className="mt-1 block text-[0.56rem] font-semibold uppercase leading-tight tracking-[0.2em] text-mutedGold sm:text-[0.62rem] sm:tracking-[0.28em]">
-                  Learn. Build. Scale. Become.
+                  Digital Store
                 </span>
               </div>
             </div>
@@ -72,19 +77,17 @@ export const Navbar = () => {
             >
               <Search className="h-4 w-4" />
             </button>
-            <Link
-              aria-label="Cart with zero items"
+            <button
+              aria-label={`Open cart with ${totalItems} item${totalItems === 1 ? '' : 's'}`}
               className="relative inline-flex h-11 w-11 items-center justify-center rounded-full border border-neutralBorder bg-white/80 text-emeraldDeep transition hover:border-emeraldDeep hover:bg-cream"
-              to="/shop"
+              onClick={handleOpenCart}
+              type="button"
             >
               <ShoppingBag className="h-4 w-4" />
               <span className="absolute -right-1 -top-1 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-burntOrange px-1 text-[10px] font-semibold text-warmWhite">
-                0
+                {totalItems}
               </span>
-            </Link>
-            <Button href="/contact" size="sm">
-              Apply Now
-            </Button>
+            </button>
           </div>
 
           <div className="flex items-center gap-2 min-[1100px]:hidden">
@@ -95,6 +98,17 @@ export const Navbar = () => {
               type="button"
             >
               <Search className="h-4 w-4" />
+            </button>
+            <button
+              aria-label={`Open cart with ${totalItems} item${totalItems === 1 ? '' : 's'}`}
+              className="relative inline-flex h-11 w-11 items-center justify-center rounded-full border border-neutralBorder bg-white/90 text-emeraldDeep transition hover:border-emeraldDeep hover:bg-cream"
+              onClick={handleOpenCart}
+              type="button"
+            >
+              <ShoppingBag className="h-4 w-4" />
+              <span className="absolute -right-1 -top-1 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-burntOrange px-1 text-[10px] font-semibold text-warmWhite">
+                {totalItems}
+              </span>
             </button>
             <button
               aria-controls="mobile-menu"
@@ -119,7 +133,7 @@ export const Navbar = () => {
                 Millionaires Academy
               </p>
               <p className="mt-1 text-sm leading-6 text-muted">
-                Premium business education, launch systems, and practical support.
+                Curated trainings, vendor lists, blueprints, and business tools.
               </p>
             </div>
             <nav aria-label="Mobile">
@@ -143,20 +157,20 @@ export const Navbar = () => {
               </ul>
             </nav>
             <div className="mt-5 grid gap-3">
-              <Button fullWidth href="/shop" onClick={closeMenu} variant="secondary">
-                Explore Resources
-              </Button>
-              <Button
-                fullWidth
-                href="/book-session"
+              <Link
+                className="inline-flex items-center justify-center rounded-full bg-burntOrange px-5 py-3 text-sm font-medium text-warmWhite transition hover:bg-[#dc5a1f]"
                 onClick={closeMenu}
-                variant="outline"
+                to="/shop"
               >
-                Book Session
-              </Button>
-              <Button fullWidth href="/contact" onClick={closeMenu}>
-                Apply Now
-              </Button>
+                Shop Products
+              </Link>
+              <button
+                className="inline-flex items-center justify-center rounded-full border border-neutralBorder bg-white px-5 py-3 text-sm font-medium text-emeraldDeep transition hover:border-emeraldDeep hover:bg-cream"
+                onClick={handleOpenCart}
+                type="button"
+              >
+                View Cart
+              </button>
             </div>
           </div>
         ) : null}

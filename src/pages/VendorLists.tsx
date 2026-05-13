@@ -5,11 +5,11 @@ import { Container } from '../components/common/Container'
 import { SectionHeader } from '../components/common/SectionHeader'
 import { FAQSection } from '../components/sections/FAQSection'
 import { faqs } from '../data/faqs'
-import { products } from '../data/products'
+import { activeProducts } from '../utils/productUtils'
 import { usePageTitle } from '../utils/usePageTitle'
 
-const vendorProducts = products.filter((product) =>
-  product.category.toLowerCase().includes('vendor'),
+const vendorProducts = activeProducts.filter((product) =>
+  product.product_type.toLowerCase().includes('vendor'),
 )
 
 const vendorFaqs = faqs.filter(

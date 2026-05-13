@@ -1,0 +1,288 @@
+[
+  {
+    "id": "prod_001",
+    "handle": "luxe-income-accelerator",
+    "title": "Luxe Income Accelerator",
+    "description": "A focused digital training experience for founders who want a clearer offer, stronger sales flow, and a practical path to their next income goal.",
+    "product_type": "Digital Course",
+    "vendor": "Millionaires Academy",
+    "images": [
+      {
+        "src": "/images/products/luxe-income-accelerator.svg",
+        "alt": "Luxe Income Accelerator course cover"
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_001_standard",
+        "title": "Standard",
+        "price": "497.00",
+        "compare_at_price": "997.00",
+        "available": true,
+        "inventory_quantity": 25,
+        "sku": "MA-LIA-STD"
+      }
+    ],
+    "tags": ["coaching", "digital", "sales"],
+    "status": "active",
+    "featured": true,
+    "details": [
+      "Six-week business growth roadmap",
+      "Offer clarity and positioning lessons",
+      "Weekly execution prompts",
+      "Launch checklist and sales action plan"
+    ],
+    "delivery_method": "Digital course access after checkout."
+  },
+  {
+    "id": "prod_002",
+    "handle": "boutique-vendor-starter-list",
+    "title": "Boutique Vendor Starter List",
+    "description": "A curated vendor resource for boutique founders preparing to source products with more clarity, direction, and confidence.",
+    "product_type": "Vendor List",
+    "vendor": "Millionaires Academy",
+    "images": [
+      {
+        "src": "/images/products/boutique-vendor-starter-list.svg",
+        "alt": "Boutique Vendor Starter List product cover"
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_002_standard",
+        "title": "Digital Download",
+        "price": "59.00",
+        "compare_at_price": "99.00",
+        "available": true,
+        "inventory_quantity": 100,
+        "sku": "MA-BVSL-DL"
+      }
+    ],
+    "tags": ["vendors", "boutique", "sourcing"],
+    "status": "active",
+    "featured": true,
+    "details": [
+      "Vendor direction by product category",
+      "Beginner-friendly sourcing notes",
+      "Product planning prompts",
+      "Supplier outreach checklist"
+    ],
+    "delivery_method": "Instant digital download after checkout."
+  },
+  {
+    "id": "prod_003",
+    "handle": "packaging-vendor-vault",
+    "title": "Packaging Vendor Vault",
+    "description": "A practical vendor guide for entrepreneurs who need packaging options for product presentation, shipping, and brand polish.",
+    "product_type": "Vendor List",
+    "vendor": "Millionaires Academy",
+    "images": [
+      {
+        "src": "/images/products/packaging-vendor-vault.svg",
+        "alt": "Packaging Vendor Vault product cover"
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_003_standard",
+        "title": "Digital Download",
+        "price": "49.00",
+        "compare_at_price": "79.00",
+        "available": true,
+        "inventory_quantity": 100,
+        "sku": "MA-PVV-DL"
+      }
+    ],
+    "tags": ["vendors", "packaging", "products"],
+    "status": "active",
+    "featured": true,
+    "details": [
+      "US packaging vendor direction",
+      "China packaging vendor direction",
+      "Brand packaging checklist",
+      "Sourcing preparation notes"
+    ],
+    "delivery_method": "Instant digital download after checkout."
+  },
+  {
+    "id": "prod_004",
+    "handle": "custom-store-masterclass",
+    "title": "Custom Store Masterclass",
+    "description": "A streamlined masterclass for organizing a polished online store, from product setup to customer flow and homepage structure.",
+    "product_type": "Digital Course",
+    "vendor": "Millionaires Academy",
+    "images": [
+      {
+        "src": "/images/products/custom-store-masterclass.svg",
+        "alt": "Custom Store Masterclass course cover"
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_004_standard",
+        "title": "Standard",
+        "price": "129.99",
+        "compare_at_price": "199.99",
+        "available": true,
+        "inventory_quantity": 40,
+        "sku": "MA-CSM-STD"
+      },
+      {
+        "id": "var_004_premium",
+        "title": "Premium with Store Audit",
+        "price": "249.99",
+        "compare_at_price": "399.99",
+        "available": true,
+        "inventory_quantity": 12,
+        "sku": "MA-CSM-PRM"
+      }
+    ],
+    "tags": ["store", "website", "digital"],
+    "status": "active",
+    "featured": true,
+    "details": [
+      "Store setup and layout lessons",
+      "Product and category planning",
+      "Homepage structure guidance",
+      "Launch-readiness checklist"
+    ],
+    "delivery_method": "Digital course access after checkout."
+  },
+  {
+    "id": "prod_005",
+    "handle": "idea-to-income-roadmap",
+    "title": "Idea to Income Roadmap",
+    "description": "A clear digital blueprint that turns a business idea into practical launch steps, offer decisions, and weekly action.",
+    "product_type": "Digital Blueprint",
+    "vendor": "Millionaires Academy",
+    "images": [
+      {
+        "src": "/images/products/idea-to-income-roadmap.svg",
+        "alt": "Idea to Income Roadmap blueprint cover"
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_005_standard",
+        "title": "Digital Download",
+        "price": "39.00",
+        "available": true,
+        "inventory_quantity": 100,
+        "sku": "MA-IIR-DL"
+      }
+    ],
+    "tags": ["blueprint", "launch", "planning"],
+    "status": "active",
+    "featured": true,
+    "details": [
+      "Launch roadmap",
+      "Offer planning prompts",
+      "Business setup checklist",
+      "Action steps by stage"
+    ],
+    "delivery_method": "Instant digital download after checkout."
+  },
+  {
+    "id": "prod_006",
+    "handle": "cleaning-business-internal-forms",
+    "title": "Cleaning Business Internal Forms",
+    "description": "A clean set of operational forms and templates for organizing client communication, internal workflow, and service expectations.",
+    "product_type": "Business Forms",
+    "vendor": "Millionaires Academy",
+    "images": [
+      {
+        "src": "/images/products/cleaning-business-internal-forms.svg",
+        "alt": "Cleaning Business Internal Forms product cover"
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_006_standard",
+        "title": "Digital Download",
+        "price": "29.00",
+        "available": true,
+        "inventory_quantity": 100,
+        "sku": "MA-CBIF-DL"
+      }
+    ],
+    "tags": ["forms", "cleaning business", "operations"],
+    "status": "active",
+    "featured": false,
+    "details": [
+      "Operational form templates",
+      "Client workflow structure",
+      "Internal organization prompts",
+      "Service delivery notes"
+    ],
+    "delivery_method": "Instant digital download after checkout."
+  },
+  {
+    "id": "prod_007",
+    "handle": "business-launch-checklist",
+    "title": "Business Launch Checklist",
+    "description": "A simple checklist to help new founders organize the foundational pieces most entrepreneurs overlook before going live.",
+    "product_type": "Digital Blueprint",
+    "vendor": "Millionaires Academy",
+    "images": [
+      {
+        "src": "/images/products/business-launch-checklist.svg",
+        "alt": "Business Launch Checklist product cover"
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_007_standard",
+        "title": "Digital Download",
+        "price": "19.00",
+        "available": true,
+        "inventory_quantity": 100,
+        "sku": "MA-BLC-DL"
+      }
+    ],
+    "tags": ["checklist", "launch", "startup"],
+    "status": "active",
+    "featured": false,
+    "details": [
+      "Launch-readiness checkpoints",
+      "Business setup reminders",
+      "Brand preparation prompts",
+      "Offer clarity checklist"
+    ],
+    "delivery_method": "Instant digital download after checkout."
+  },
+  {
+    "id": "prod_008",
+    "handle": "product-pricing-calculator",
+    "title": "Product Pricing Calculator",
+    "description": "A practical calculator and guide to help product sellers price with more confidence, understand margins, and plan profit.",
+    "product_type": "Business Tool",
+    "vendor": "Millionaires Academy",
+    "images": [
+      {
+        "src": "/images/products/product-pricing-calculator.svg",
+        "alt": "Product Pricing Calculator product cover"
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_008_standard",
+        "title": "Spreadsheet Template",
+        "price": "27.00",
+        "compare_at_price": "47.00",
+        "available": true,
+        "inventory_quantity": 100,
+        "sku": "MA-PPC-SP"
+      }
+    ],
+    "tags": ["pricing", "calculator", "profit"],
+    "status": "active",
+    "featured": false,
+    "details": [
+      "Editable pricing spreadsheet",
+      "Margin planning worksheet",
+      "Cost tracking prompts",
+      "Profit-focused pricing notes"
+    ],
+    "delivery_method": "Instant digital download after checkout."
+  }
+]

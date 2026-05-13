@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import { PageShell } from '../components/layout/PageShell'
 import { About } from '../pages/About'
 import { BookSession } from '../pages/BookSession'
+import { Cart } from '../pages/Cart'
 import { Contact } from '../pages/Contact'
 import { Home } from '../pages/Home'
 import { NotFound } from '../pages/NotFound'
@@ -10,6 +11,7 @@ import { ProductDetail } from '../pages/ProductDetail'
 import { Services } from '../pages/Services'
 import { Shop } from '../pages/Shop'
 import { ShopifyWebsite } from '../pages/ShopifyWebsite'
+import { Success } from '../pages/Success'
 import { Terms } from '../pages/Terms'
 import { VendorLists } from '../pages/VendorLists'
 
@@ -24,7 +26,10 @@ export const AppRoutes = () => (
       <Route element={<ShopifyWebsite />} path="/shopify-website" />
       <Route element={<BookSession />} path="/book-session" />
       <Route element={<Shop />} path="/shop" />
-      <Route element={<ProductDetail />} path="/shop/:slug" />
+      <Route element={<ProductDetail />} path="/shop/:id" />
+      <Route element={<ProductDetail />} path="/product/:id" />
+      <Route element={<Cart />} path="/cart" />
+      <Route element={<Success />} path="/success" />
       <Route element={<Contact />} path="/contact" />
       <Route element={<PrivacyPolicy />} path="/privacy-policy" />
       <Route element={<Terms />} path="/terms" />

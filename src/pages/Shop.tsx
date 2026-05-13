@@ -5,12 +5,16 @@ import { AnimatedSection } from '../components/common/AnimatedSection'
 import { Container } from '../components/common/Container'
 import { EmptyState } from '../components/common/EmptyState'
 import { SectionHeader } from '../components/common/SectionHeader'
-import { brandAssets } from '../data/brandAssets'
-import { products } from '../data/products'
 import { cn } from '../utils/cn'
+import {
+  activeProducts,
+  getDefaultVariant,
+  getProductTypes,
+  parseVariantPrice,
+} from '../utils/productUtils'
 import { usePageTitle } from '../utils/usePageTitle'
 
-const categories = ['All', ...new Set(products.map((product) => product.category))]
+const categories = ['All', ...getProductTypes()]
 
 type SortOption = 'featured' | 'low-to-high' | 'high-to-low'
 
@@ -22,25 +26,32 @@ export const Shop = () => {
   const [sortOption, setSortOption] = useState<SortOption>('featured')
   const deferredSearchTerm = useDeferredValue(searchTerm.trim().toLowerCase())
 
-  let filteredProducts = [...products]
+  let filteredProducts = [...activeProducts]
 
   if (selectedCategory !== 'All') {
     filteredProducts = filteredProducts.filter(
-      (product) => product.category === selectedCategory,
+      (product) => product.product_type === selectedCategory,
     )
   }
 
   if (deferredSearchTerm) {
     filteredProducts = filteredProducts.filter((product) => {
-      const haystack = `${product.title} ${product.category} ${product.shortDescription}`.toLowerCase()
+      const haystack =
+        `${product.title} ${product.product_type} ${product.description} ${product.tags.join(' ')}`.toLowerCase()
       return haystack.includes(deferredSearchTerm)
     })
   }
 
   if (sortOption === 'low-to-high') {
-    filteredProducts.sort((left, right) => left.price - right.price)
+    filteredProducts.sort(
+      (left, right) =>
+        parseVariantPrice(getDefaultVariant(left)) - parseVariantPrice(getDefaultVariant(right)),
+    )
   } else if (sortOption === 'high-to-low') {
-    filteredProducts.sort((left, right) => right.price - left.price)
+    filteredProducts.sort(
+      (left, right) =>
+        parseVariantPrice(getDefaultVariant(right)) - parseVariantPrice(getDefaultVariant(left)),
+    )
   } else {
     filteredProducts.sort(
       (left, right) => Number(right.featured) - Number(left.featured),
@@ -51,22 +62,12 @@ export const Shop = () => {
     <>
       <AnimatedSection className="pt-10 sm:pt-14">
         <Container>
-          <div className="grid gap-8 rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:grid-cols-[1.03fr_0.97fr] lg:items-center lg:p-10">
-            <div>
-              <SectionHeader
-                description="Explore vendor resources, launch guides, custom website support, and business tools created to help you build with structure."
-                eyebrow="Resources"
-                title="Business Resources & Digital Blueprints"
-              />
-            </div>
-            <div className="overflow-hidden rounded-[1.75rem] bg-cream/72 p-4">
-              <img
-                alt="Nickie Nicole, founder of Millionaires Academy"
-                className="aspect-[4/4.8] w-full rounded-[1.5rem] object-cover object-[center_18%]"
-                loading="lazy"
-                src={brandAssets.founder.resources}
-              />
-            </div>
+          <div className="rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:p-10">
+            <SectionHeader
+              description="Shop digital trainings, vendor lists, launch blueprints, and simple business tools built for fast, focused execution."
+              eyebrow="Products"
+              title="Millionaires Academy product catalog"
+            />
           </div>
         </Container>
       </AnimatedSection>
@@ -81,7 +82,7 @@ export const Shop = () => {
                 <input
                   className="w-full rounded-full border border-neutralBorder bg-cream/60 py-3 pl-11 pr-4 text-sm"
                   onChange={(event) => setSearchTerm(event.target.value)}
-                  placeholder="Search resources, vendor guidance, or blueprints"
+                  placeholder="Search courses, vendor lists, blueprints, or tools"
                   type="search"
                   value={searchTerm}
                 />
@@ -132,8 +133,8 @@ export const Shop = () => {
           ) : (
             <EmptyState
               actionHref="/contact"
-              actionLabel="Need something custom?"
-              description="Try a different category or search phrase. If you need a more specific resource, use the contact page to ask about tailored support."
+              actionLabel="Ask for help"
+              description="Try a different product type or search phrase. If you need help choosing, use the contact page."
               title="No products matched your search."
             />
           )}

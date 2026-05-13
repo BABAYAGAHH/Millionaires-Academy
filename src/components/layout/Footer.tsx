@@ -2,12 +2,11 @@ import { Link } from 'react-router-dom'
 import logoPlaceholder from '../../assets/images/logo-placeholder.svg'
 import { footerOfferLinks, footerQuickLinks } from '../../data/navigation'
 import { Container } from '../common/Container'
-import { LeadCaptureForm } from '../forms/LeadCaptureForm'
 
 export const Footer = () => (
   <footer className="mt-24 bg-forest text-warmWhite">
     <Container className="py-16 sm:py-20">
-      <div className="grid gap-12 xl:grid-cols-[1.35fr_0.8fr_0.8fr_1fr]">
+      <div className="grid gap-12 lg:grid-cols-[1.5fr_0.75fr_0.75fr]">
         <div>
           <div className="flex items-center gap-4">
             <img
@@ -20,17 +19,14 @@ export const Footer = () => (
                 Millionaires Academy
               </p>
               <p className="mt-2 text-xs font-semibold uppercase tracking-[0.28em] text-mutedGold">
-                Learn. Build. Scale. Become.
+                Digital Store
               </p>
             </div>
           </div>
           <p className="mt-5 max-w-md text-sm leading-7 text-warmWhite/78">
-            Millionaires Academy is a premium business education and resource
-            platform created to help ambitious entrepreneurs build with clarity,
-            structure, and confidence. From vendor resources to digital
-            blueprints, custom website support, and one-on-one strategy
-            sessions, the academy gives business owners practical tools for
-            moving from idea to execution.
+            Millionaires Academy is a product-first digital store for ambitious
+            founders who want practical trainings, vendor lists, launch
+            blueprints, and business tools they can use immediately.
           </p>
         </div>
 
@@ -69,23 +65,6 @@ export const Footer = () => (
           </div>
         </div>
 
-        <div>
-          <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-mutedGold">
-            Newsletter
-          </h3>
-          <p className="mt-5 text-sm leading-7 text-warmWhite/78">
-            Join the academy list for launch notes, premium resources, and
-            mentorship updates.
-          </p>
-          <div className="mt-5">
-            <LeadCaptureForm
-              buttonLabel="Join the Academy"
-              compact
-              successMessage="You're on the list. Millionaires Academy will share updates soon."
-              theme="dark"
-            />
-          </div>
-        </div>
       </div>
 
       <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-warmWhite/60 sm:flex-row sm:items-center sm:justify-between">

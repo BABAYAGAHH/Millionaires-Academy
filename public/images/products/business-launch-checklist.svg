@@ -1,0 +1,12 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="72" fill="#FFFDF8"/>
+  <rect x="112" y="96" width="976" height="708" rx="56" fill="#123C2F"/>
+  <rect x="226" y="174" width="748" height="552" rx="38" fill="#FFFDF8"/>
+  <text x="286" y="286" fill="#050505" font-family="Georgia, serif" font-size="70" font-weight="700">Launch Checklist</text>
+  <path d="M310 402L344 436L404 362" stroke="#0F8C83" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="450" y="376" width="360" height="46" rx="23" fill="#E9E1D6"/>
+  <path d="M310 520L344 554L404 480" stroke="#0F8C83" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="450" y="494" width="300" height="46" rx="23" fill="#E9E1D6"/>
+  <path d="M310 638L344 672L404 598" stroke="#0F8C83" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="450" y="612" width="420" height="46" rx="23" fill="#E9E1D6"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="72" fill="#FFFDF8"/>
+  <rect x="64" y="64" width="1072" height="772" rx="56" fill="#123C2F"/>
+  <circle cx="970" cy="170" r="180" fill="#C8A75D" opacity="0.24"/>
+  <circle cx="190" cy="720" r="220" fill="#0F8C83" opacity="0.22"/>
+  <rect x="166" y="168" width="868" height="564" rx="38" fill="#FFFDF8" opacity="0.96"/>
+  <text x="210" y="306" fill="#123C2F" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" letter-spacing="8">MILLIONAIRES ACADEMY</text>
+  <text x="210" y="425" fill="#050505" font-family="Georgia, serif" font-size="86" font-weight="700">Luxe Income</text>
+  <text x="210" y="520" fill="#050505" font-family="Georgia, serif" font-size="86" font-weight="700">Accelerator</text>
+  <rect x="210" y="590" width="362" height="64" rx="32" fill="#F26A2E"/>
+  <text x="252" y="632" fill="#FFFDF8" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700">DIGITAL COURSE</text>
+</svg>

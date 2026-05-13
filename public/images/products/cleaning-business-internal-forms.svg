@@ -1,0 +1,11 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="72" fill="#F7F2EA"/>
+  <rect x="120" y="94" width="960" height="712" rx="54" fill="#FFFDF8" stroke="#E9E1D6" stroke-width="6"/>
+  <rect x="236" y="210" width="728" height="86" rx="20" fill="#123C2F"/>
+  <rect x="236" y="352" width="728" height="54" rx="16" fill="#E9E1D6"/>
+  <rect x="236" y="454" width="728" height="54" rx="16" fill="#E9E1D6"/>
+  <rect x="236" y="556" width="424" height="54" rx="16" fill="#E9E1D6"/>
+  <circle cx="876" cy="590" r="96" fill="#0F8C83" opacity="0.18"/>
+  <path d="M834 590L868 624L922 552" stroke="#0F8C83" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="270" y="268" fill="#FFFDF8" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="800">CLEANING BUSINESS FORMS</text>
+</svg>
