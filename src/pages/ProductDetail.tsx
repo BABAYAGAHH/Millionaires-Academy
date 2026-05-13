@@ -88,41 +88,43 @@ export const ProductDetail = () => {
 
   return (
     <>
-      <AnimatedSection className="pt-10 sm:pt-14">
+      <AnimatedSection className="pt-7 sm:pt-10">
         <Container>
-          <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-            <div className="overflow-hidden rounded-[2rem] border border-neutralBorder bg-cream/72 p-5 shadow-soft">
-              <div className="overflow-hidden rounded-[1.5rem]">
+          <div className="mx-auto grid max-w-2xl gap-4">
+            <div className="overflow-hidden rounded-[2.25rem] border border-stanBlack/10 bg-white p-3 shadow-stan">
+              <div className="overflow-hidden rounded-[1.9rem] bg-stanSurface">
                 <img
                   alt={image.alt}
-                  className="aspect-[4/4.5] w-full object-cover"
+                  className="aspect-[4/3] w-full object-cover"
                   src={image.src}
                 />
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft">
-              <Badge>{product.product_type}</Badge>
-              <h1 className="text-balance mt-5 text-4xl font-semibold leading-tight text-softBlack sm:text-5xl">
+            <div className="rounded-[2.25rem] border border-stanBlack/10 bg-white p-5 shadow-stan sm:p-7">
+              <Badge className="bg-stanSurface text-stanBlack" variant="light">
+                {product.product_type}
+              </Badge>
+              <h1 className="text-balance mt-5 text-4xl font-black leading-tight text-stanBlack sm:text-5xl">
                 {product.title}
               </h1>
               <div className="mt-4 flex flex-wrap items-baseline gap-3">
-                <p className="text-3xl font-semibold text-emeraldDeep">
+                <p className="text-3xl font-black text-stanBlack">
                   {formatCurrency(price)}
                 </p>
                 {compareAtPrice ? (
-                  <p className="text-base text-muted line-through">{compareAtPrice}</p>
+                  <p className="text-base font-semibold text-muted line-through">{compareAtPrice}</p>
                 ) : null}
               </div>
-              <p className="mt-6 text-base leading-8 text-muted">
+              <p className="mt-5 text-base font-semibold leading-8 text-muted">
                 {product.description}
               </p>
 
               {product.variants.length > 1 ? (
                 <label className="mt-7 block">
-                  <span className="text-sm font-semibold text-softBlack">Choose option</span>
+                  <span className="text-sm font-extrabold text-stanBlack">Choose option</span>
                   <select
-                    className="mt-3 w-full rounded-2xl border border-neutralBorder bg-cream/50 px-4 py-3 text-sm text-charcoal"
+                    className="mt-3 w-full rounded-2xl border border-stanBlack/10 bg-stanSurface px-4 py-3 text-sm font-semibold text-stanBlack"
                     onChange={(event) => setVariantId(event.target.value)}
                     value={variantId}
                   >
@@ -136,22 +138,22 @@ export const ProductDetail = () => {
               ) : null}
 
               <div className="mt-7">
-                <p className="text-sm font-semibold text-softBlack">Quantity</p>
-                <div className="mt-3 inline-flex items-center rounded-full border border-neutralBorder bg-cream/50">
+                <p className="text-sm font-extrabold text-stanBlack">Quantity</p>
+                <div className="mt-3 inline-flex items-center rounded-full border border-stanBlack/10 bg-stanSurface">
                   <button
                     aria-label="Decrease quantity"
-                    className="inline-flex h-11 w-11 items-center justify-center text-emeraldDeep"
+                    className="inline-flex h-11 w-11 items-center justify-center text-stanBlack"
                     onClick={() => setQuantity((value) => Math.max(1, value - 1))}
                     type="button"
                   >
                     <Minus className="h-4 w-4" />
                   </button>
-                  <span className="min-w-12 text-center text-sm font-semibold text-charcoal">
+                  <span className="min-w-12 text-center text-sm font-extrabold text-stanBlack">
                     {quantity}
                   </span>
                   <button
                     aria-label="Increase quantity"
-                    className="inline-flex h-11 w-11 items-center justify-center text-emeraldDeep"
+                    className="inline-flex h-11 w-11 items-center justify-center text-stanBlack"
                     onClick={() => setQuantity((value) => value + 1)}
                     type="button"
                   >
@@ -166,10 +168,7 @@ export const ProductDetail = () => {
                 </div>
               ) : null}
 
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                <Button fullWidth onClick={handleAddToCart} size="lg" variant="outline">
-                  Add to Cart
-                </Button>
+              <div className="mt-8 grid gap-3">
                 <Button
                   disabled={!selectedVariant?.available || isBuyingNow}
                   fullWidth
@@ -180,20 +179,23 @@ export const ProductDetail = () => {
                   {isBuyingNow ? 'Starting Checkout...' : 'Buy Now'}
                   <ArrowRight className="h-4 w-4" />
                 </Button>
+                <Button fullWidth onClick={handleAddToCart} size="lg" variant="outline">
+                  Add to Cart
+                </Button>
               </div>
-              <p className="mt-4 text-sm leading-7 text-muted">
-                Checkout redirects to the configured payment provider. Add Stripe
-                credentials or payment links before taking live orders.
+              <p className="mt-4 rounded-2xl bg-stanSurface px-4 py-3 text-sm font-semibold leading-7 text-muted">
+                Instant digital delivery after checkout. Final payment is handled
+                by the configured payment provider.
               </p>
             </div>
           </div>
         </Container>
       </AnimatedSection>
 
-      <AnimatedSection className="pt-14 sm:pt-16 lg:pt-20">
+      <AnimatedSection className="pt-6 sm:pt-8">
         <Container>
-          <div className="grid gap-6 lg:grid-cols-3">
-            <article className="rounded-3xl border border-neutralBorder bg-white p-7 shadow-soft lg:col-span-2">
+          <div className="mx-auto grid max-w-2xl gap-4">
+            <article className="rounded-[2rem] border border-stanBlack/10 bg-white p-6 shadow-stan sm:p-7">
               <SectionHeader
                 description="Everything included in this offer is designed to make execution feel easier and more structured."
                 eyebrow="What's Included"
@@ -202,35 +204,35 @@ export const ProductDetail = () => {
               <ul className="mt-8 space-y-4">
                 {(product.details ?? []).map((item) => (
                   <li className="flex gap-3" key={item}>
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
-                    <span className="text-sm leading-7 text-charcoal">{item}</span>
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-stanBlack" />
+                    <span className="text-sm font-semibold leading-7 text-charcoal">{item}</span>
                   </li>
                 ))}
               </ul>
             </article>
 
-            <div className="space-y-6">
-              <article className="rounded-3xl border border-neutralBorder bg-white p-7 shadow-soft">
-                <h2 className="text-2xl font-semibold text-softBlack">
+            <div className="grid gap-4 sm:grid-cols-2">
+              <article className="rounded-[2rem] border border-stanBlack/10 bg-white p-6 shadow-stan">
+                <h2 className="text-2xl font-black text-stanBlack">
                   Who this is for
                 </h2>
-                <p className="mt-4 text-sm leading-7 text-muted">
+                <p className="mt-4 text-sm font-semibold leading-7 text-muted">
                   {product.tags.map((tag) => `#${tag}`).join(' · ')}
                 </p>
               </article>
-              <article className="rounded-3xl border border-neutralBorder bg-cream/72 p-7 shadow-soft">
-                <h2 className="text-2xl font-semibold text-softBlack">
+              <article className="rounded-[2rem] border border-stanBlack/10 bg-white p-6 shadow-stan">
+                <h2 className="text-2xl font-black text-stanBlack">
                   Delivery method
                 </h2>
-                <p className="mt-4 text-sm leading-7 text-muted">
+                <p className="mt-4 text-sm font-semibold leading-7 text-muted">
                   {product.delivery_method ?? 'Digital delivery after checkout.'}
                 </p>
               </article>
-              <article className="rounded-3xl border border-neutralBorder bg-white p-7 shadow-soft">
-                <h2 className="text-2xl font-semibold text-softBlack">
+              <article className="rounded-[2rem] border border-stanBlack/10 bg-white p-6 shadow-stan sm:col-span-2">
+                <h2 className="text-2xl font-black text-stanBlack">
                   Support note
                 </h2>
-                <p className="mt-4 text-sm leading-7 text-muted">
+                <p className="mt-4 text-sm font-semibold leading-7 text-muted">
                   If you're not sure whether this resource fits your stage, use
                   the contact page and Millionaires Academy can help you choose a
                   better next step.

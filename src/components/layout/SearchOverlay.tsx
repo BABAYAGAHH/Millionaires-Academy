@@ -66,27 +66,27 @@ export const SearchOverlay = ({ isOpen, onClose }: SearchOverlayProps) => {
   return (
     <div
       aria-modal="true"
-      className="fixed inset-0 z-[80] bg-softBlack/45 px-4 py-5 backdrop-blur-sm sm:px-6 sm:py-6"
+      className="fixed inset-0 z-[80] bg-stanBlack/45 px-4 py-5 backdrop-blur-sm sm:px-6 sm:py-6"
       onClick={handleClose}
       role="dialog"
     >
       <div
-        className="mx-auto flex h-full max-w-3xl flex-col overflow-hidden rounded-[2rem] border border-neutralBorder bg-warmWhite shadow-premium"
+        className="mx-auto flex h-full max-w-2xl flex-col overflow-hidden rounded-[2rem] border border-stanBlack/10 bg-[#f5f5f5] shadow-premium"
         onClick={(event) => event.stopPropagation()}
       >
-        <div className="border-b border-neutralBorder px-4 py-4 sm:px-6 sm:py-5">
+        <div className="m-3 rounded-[1.7rem] border border-stanBlack/10 bg-white px-4 py-4 shadow-stan sm:px-6 sm:py-5">
           <div className="flex items-start justify-between gap-4">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-mutedGold">
+              <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-mutedGold">
                 Search Products
               </p>
-              <h2 className="mt-2 font-heading text-2xl text-softBlack sm:text-3xl">
+              <h2 className="mt-2 text-2xl font-black text-stanBlack sm:text-3xl">
                 Find the right product faster.
               </h2>
             </div>
             <button
               aria-label="Close search"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-neutralBorder bg-white text-emeraldDeep transition hover:border-emeraldDeep hover:bg-cream"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-stanBlack/10 bg-stanSurface text-stanBlack transition hover:border-stanBlack"
               onClick={handleClose}
               type="button"
             >
@@ -96,10 +96,10 @@ export const SearchOverlay = ({ isOpen, onClose }: SearchOverlayProps) => {
 
           <label className="relative mt-5 block">
             <span className="sr-only">Search products</span>
-            <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted" />
+            <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-stanBlack" />
             <input
               autoFocus
-              className="w-full rounded-full border border-neutralBorder bg-cream/60 py-3.5 pl-11 pr-4 text-sm text-charcoal"
+              className="w-full rounded-full border border-stanBlack/10 bg-stanSurface py-3.5 pl-11 pr-4 text-sm font-semibold text-stanBlack"
               onChange={(event) => setQuery(event.target.value)}
               placeholder="Search courses, vendor lists, blueprints, or tools."
               type="search"
@@ -110,14 +110,14 @@ export const SearchOverlay = ({ isOpen, onClose }: SearchOverlayProps) => {
 
         <div className="flex-1 overflow-y-auto px-4 py-4 sm:px-6 sm:py-5">
           {!deferredQuery ? (
-            <div className="rounded-[1.5rem] border border-neutralBorder bg-cream/72 px-4 py-4 text-sm leading-7 text-charcoal">
+            <div className="rounded-[1.5rem] border border-stanBlack/10 bg-white px-4 py-4 text-sm font-semibold leading-7 text-charcoal shadow-stan">
               Search trainings, vendor lists, launch blueprints, and business
               tools. Start with the featured products below.
             </div>
           ) : null}
 
           <div className="mt-4 flex items-center justify-between gap-4">
-            <p className="text-sm font-medium text-muted">
+            <p className="text-sm font-extrabold text-muted">
               {deferredQuery ? 'Matching products' : 'Popular products'}
             </p>
             <Button href="/shop" onClick={handleClose} variant="ghost">
@@ -132,7 +132,7 @@ export const SearchOverlay = ({ isOpen, onClose }: SearchOverlayProps) => {
 
                 return (
                   <Link
-                    className="rounded-[1.5rem] border border-neutralBorder bg-white p-4 transition hover:border-emeraldDeep hover:bg-cream/40"
+                    className="rounded-[1.5rem] border border-stanBlack/10 bg-white p-4 shadow-stan transition hover:border-stanBlack"
                     key={product.id}
                     onClick={handleClose}
                     to={`/product/${product.id}`}
@@ -146,29 +146,29 @@ export const SearchOverlay = ({ isOpen, onClose }: SearchOverlayProps) => {
                       <div className="min-w-0 flex-1">
                         <div className="flex flex-wrap items-center gap-2">
                           <Badge variant="light">{product.product_type}</Badge>
-                          <span className="text-sm font-semibold text-emeraldDeep">
+                          <span className="text-sm font-black text-stanBlack">
                             {getProductPriceLabel(product)}
                           </span>
                         </div>
-                        <h3 className="mt-3 text-lg font-semibold leading-tight text-softBlack">
+                        <h3 className="mt-3 text-lg font-black leading-tight text-stanBlack">
                           {product.title}
                         </h3>
-                        <p className="mt-2 text-sm leading-6 text-muted">
+                        <p className="mt-2 text-sm font-semibold leading-6 text-muted">
                           {product.description}
                         </p>
                       </div>
-                      <ArrowRight className="mt-1 hidden h-4 w-4 shrink-0 text-emeraldDeep sm:block" />
+                      <ArrowRight className="mt-1 hidden h-4 w-4 shrink-0 text-stanBlack sm:block" />
                     </div>
                   </Link>
                 )
               })}
             </div>
           ) : (
-            <div className="mt-4 rounded-[1.5rem] border border-dashed border-neutralBorder bg-white px-5 py-10 text-center">
-              <p className="font-heading text-2xl text-softBlack">
+            <div className="mt-4 rounded-[1.5rem] border border-dashed border-stanBlack/15 bg-white px-5 py-10 text-center shadow-stan">
+              <p className="text-2xl font-black text-stanBlack">
                 No matching products yet.
               </p>
-              <p className="mx-auto mt-3 max-w-xl text-sm leading-7 text-muted">
+              <p className="mx-auto mt-3 max-w-xl text-sm font-semibold leading-7 text-muted">
                 Try a different keyword, or use the contact page if you need
                 help choosing the right next step for your business.
               </p>

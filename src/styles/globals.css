@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,11 +9,12 @@ html {
 }
 
 body {
-  @apply bg-warmWhite font-body text-charcoal antialiased;
+  @apply bg-[#f5f5f5] font-body text-charcoal antialiased;
   overflow-x: hidden;
   background-image:
-    radial-gradient(circle at top left, rgba(200, 167, 93, 0.08), transparent 24%),
-    linear-gradient(180deg, rgba(247, 242, 234, 0.72), rgba(255, 253, 248, 0.96));
+    radial-gradient(circle at top left, rgba(200, 167, 93, 0.12), transparent 26%),
+    radial-gradient(circle at 85% 8%, rgba(242, 106, 46, 0.08), transparent 22%),
+    linear-gradient(180deg, #f5f5f5, #fffdf8);
 }
 
 #root {
@@ -44,7 +45,7 @@ h6 {
   input,
   textarea,
   select {
-    @apply outline-none focus-visible:ring-2 focus-visible:ring-mutedGold focus-visible:ring-offset-2 focus-visible:ring-offset-warmWhite;
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-softBlack focus-visible:ring-offset-2 focus-visible:ring-offset-[#f5f5f5];
   }
 }
 

@@ -22,12 +22,12 @@ interface ButtonProps {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    'bg-emeraldDeep text-warmWhite shadow-soft hover:-translate-y-0.5 hover:bg-forest hover:shadow-premium',
+    'bg-stanBlack text-warmWhite shadow-soft hover:-translate-y-0.5 hover:bg-softBlack hover:shadow-premium',
   secondary:
-    'bg-burntOrange text-warmWhite shadow-soft hover:-translate-y-0.5 hover:bg-[#dc5a1f] hover:shadow-premium',
+    'bg-stanBlack text-warmWhite shadow-soft hover:-translate-y-0.5 hover:bg-softBlack hover:shadow-premium',
   outline:
-    'border border-neutralBorder bg-transparent text-emeraldDeep hover:border-emeraldDeep hover:bg-emeraldDeep/5',
-  ghost: 'bg-transparent text-emeraldDeep hover:bg-emeraldDeep/5',
+    'border border-stanBlack/15 bg-white text-stanBlack hover:border-stanBlack hover:bg-stanBlack/5',
+  ghost: 'bg-transparent text-stanBlack hover:bg-stanBlack/5',
 }
 
 const sizeClasses: Record<ButtonSize, string> = {
@@ -51,7 +51,7 @@ export const Button = ({
   ariaLabel,
 }: ButtonProps) => {
   const sharedClassName = cn(
-    'inline-flex items-center justify-center gap-2 rounded-full font-medium transition duration-300 will-change-transform disabled:cursor-not-allowed disabled:opacity-60',
+    'inline-flex items-center justify-center gap-2 rounded-full font-extrabold transition duration-300 will-change-transform disabled:cursor-not-allowed disabled:opacity-60',
     variantClasses[variant],
     sizeClasses[size],
     fullWidth && 'w-full',

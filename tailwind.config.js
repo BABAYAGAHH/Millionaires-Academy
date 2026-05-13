@@ -15,14 +15,17 @@ export default {
         softBlack: '#050505',
         muted: '#6B6B6B',
         neutralBorder: '#E9E1D6',
+        stanBlack: '#181819',
+        stanSurface: '#F5F5F5',
       },
       fontFamily: {
-        heading: ['"Playfair Display"', 'serif'],
-        body: ['Inter', 'sans-serif'],
+        heading: ['Fraunces', 'serif'],
+        body: ['"Nunito Sans"', 'sans-serif'],
       },
       boxShadow: {
         soft: '0 18px 48px rgba(18, 60, 47, 0.08)',
         premium: '0 30px 80px rgba(11, 46, 36, 0.16)',
+        stan: '0 24px 70px rgba(24, 24, 25, 0.12)',
       },
       borderRadius: {
         '2xl': '1.5rem',

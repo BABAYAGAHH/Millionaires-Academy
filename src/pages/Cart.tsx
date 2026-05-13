@@ -31,15 +31,15 @@ export const Cart = () => {
   }
 
   return (
-    <AnimatedSection className="pt-10 sm:pt-14">
+    <AnimatedSection className="pt-7 sm:pt-10">
       <Container>
-        <div className="rounded-[2rem] border border-neutralBorder bg-white p-6 shadow-soft sm:p-8 lg:p-10">
-          <div className="flex flex-col gap-4 border-b border-neutralBorder pb-6 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mx-auto max-w-2xl rounded-[2.25rem] border border-stanBlack/10 bg-white p-5 shadow-stan sm:p-7">
+          <div className="flex flex-col gap-4 border-b border-stanBlack/10 pb-6 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-mutedGold">
+              <p className="text-xs font-black uppercase tracking-[0.28em] text-mutedGold">
                 Cart
               </p>
-              <h1 className="mt-3 text-4xl font-semibold text-softBlack sm:text-5xl">
+              <h1 className="mt-3 text-4xl font-black text-stanBlack sm:text-5xl">
                 Your selected products
               </h1>
             </div>
@@ -49,11 +49,11 @@ export const Cart = () => {
           </div>
 
           {items.length ? (
-            <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
+            <div className="mt-8 grid gap-5">
               <div className="space-y-4">
                 {items.map((item) => (
                   <article
-                    className="grid gap-4 rounded-[1.5rem] border border-neutralBorder bg-warmWhite p-4 sm:grid-cols-[7rem_minmax(0,1fr)]"
+                    className="grid gap-4 rounded-[1.75rem] border border-stanBlack/10 bg-stanSurface p-4 sm:grid-cols-[7rem_minmax(0,1fr)]"
                     key={item.id}
                   >
                     <img
@@ -65,7 +65,7 @@ export const Cart = () => {
                       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                         <div>
                           <Link
-                            className="text-xl font-semibold leading-tight text-softBlack transition hover:text-emeraldDeep"
+                            className="text-xl font-black leading-tight text-stanBlack transition hover:text-emeraldDeep"
                             to={`/product/${item.productId}`}
                           >
                             {item.productTitle}
@@ -76,7 +76,7 @@ export const Cart = () => {
                         </div>
                         <button
                           aria-label={`Remove ${item.productTitle}`}
-                          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-neutralBorder bg-white text-muted transition hover:border-burntOrange hover:text-burntOrange"
+                          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-stanBlack/10 bg-white text-muted transition hover:border-burntOrange hover:text-burntOrange"
                           onClick={() => removeItem(item.id)}
                           type="button"
                         >
@@ -85,28 +85,28 @@ export const Cart = () => {
                       </div>
 
                       <div className="mt-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                        <div className="inline-flex w-max items-center rounded-full border border-neutralBorder bg-white">
+                        <div className="inline-flex w-max items-center rounded-full border border-stanBlack/10 bg-white">
                           <button
                             aria-label={`Decrease ${item.productTitle} quantity`}
-                            className="inline-flex h-10 w-10 items-center justify-center text-emeraldDeep"
+                            className="inline-flex h-10 w-10 items-center justify-center text-stanBlack"
                             onClick={() => updateQuantity(item.id, item.quantity - 1)}
                             type="button"
                           >
                             <Minus className="h-4 w-4" />
                           </button>
-                          <span className="min-w-10 text-center text-sm font-semibold text-charcoal">
+                          <span className="min-w-10 text-center text-sm font-extrabold text-stanBlack">
                             {item.quantity}
                           </span>
                           <button
                             aria-label={`Increase ${item.productTitle} quantity`}
-                            className="inline-flex h-10 w-10 items-center justify-center text-emeraldDeep"
+                            className="inline-flex h-10 w-10 items-center justify-center text-stanBlack"
                             onClick={() => updateQuantity(item.id, item.quantity + 1)}
                             type="button"
                           >
                             <Plus className="h-4 w-4" />
                           </button>
                         </div>
-                        <p className="text-xl font-semibold text-emeraldDeep">
+                        <p className="text-xl font-black text-stanBlack">
                           {formatCurrency(item.price * item.quantity)}
                         </p>
                       </div>
@@ -115,23 +115,23 @@ export const Cart = () => {
                 ))}
               </div>
 
-              <aside className="rounded-[1.75rem] border border-neutralBorder bg-cream/72 p-6 shadow-soft">
-                <h2 className="text-2xl font-semibold text-softBlack">Order summary</h2>
-                <div className="mt-6 space-y-4 border-b border-neutralBorder pb-5 text-sm text-charcoal">
+              <aside className="rounded-[1.75rem] border border-stanBlack/10 bg-stanBlack p-6 text-warmWhite shadow-stan">
+                <h2 className="text-2xl font-black text-warmWhite">Order summary</h2>
+                <div className="mt-6 space-y-4 border-b border-white/10 pb-5 text-sm font-semibold text-warmWhite/82">
                   <div className="flex items-center justify-between">
                     <span>Subtotal</span>
-                    <span className="font-semibold">{formatCurrency(subtotal)}</span>
+                    <span className="font-extrabold">{formatCurrency(subtotal)}</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span>Delivery</span>
-                    <span className="font-semibold">Digital</span>
+                    <span className="font-extrabold">Digital</span>
                   </div>
                 </div>
-                <div className="mt-5 flex items-center justify-between text-lg font-semibold text-softBlack">
+                <div className="mt-5 flex items-center justify-between text-lg font-black text-warmWhite">
                   <span>Total</span>
                   <span>{formatCurrency(subtotal)}</span>
                 </div>
-                <p className="mt-3 text-xs leading-6 text-muted">
+                <p className="mt-3 text-xs font-semibold leading-6 text-warmWhite/62">
                   Taxes and payment details are finalized by the configured checkout provider.
                 </p>
                 {checkoutError ? (
@@ -153,10 +153,10 @@ export const Cart = () => {
               </aside>
             </div>
           ) : (
-            <div className="mt-8 rounded-[1.75rem] border border-dashed border-neutralBorder bg-cream/50 px-6 py-14 text-center">
+            <div className="mt-8 rounded-[1.75rem] border border-dashed border-stanBlack/15 bg-stanSurface px-6 py-14 text-center">
               <ShoppingBag className="mx-auto h-12 w-12 text-mutedGold" />
-              <h2 className="mt-5 text-3xl font-semibold text-softBlack">Your cart is empty.</h2>
-              <p className="mx-auto mt-3 max-w-lg text-sm leading-7 text-muted">
+              <h2 className="mt-5 text-3xl font-black text-stanBlack">Your cart is empty.</h2>
+              <p className="mx-auto mt-3 max-w-lg text-sm font-semibold leading-7 text-muted">
                 Browse the catalog and add a course, vendor list, blueprint, or tool before checkout.
               </p>
               <Button className="mt-7" href="/shop" variant="secondary">

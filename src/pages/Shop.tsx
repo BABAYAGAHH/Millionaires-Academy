@@ -4,7 +4,6 @@ import { ProductCard } from '../components/cards/ProductCard'
 import { AnimatedSection } from '../components/common/AnimatedSection'
 import { Container } from '../components/common/Container'
 import { EmptyState } from '../components/common/EmptyState'
-import { SectionHeader } from '../components/common/SectionHeader'
 import { cn } from '../utils/cn'
 import {
   activeProducts,
@@ -60,37 +59,44 @@ export const Shop = () => {
 
   return (
     <>
-      <AnimatedSection className="pt-10 sm:pt-14">
+      <AnimatedSection className="pt-7 sm:pt-10">
         <Container>
-          <div className="rounded-[2rem] border border-neutralBorder bg-white p-8 shadow-soft lg:p-10">
-            <SectionHeader
-              description="Shop digital trainings, vendor lists, launch blueprints, and simple business tools built for fast, focused execution."
-              eyebrow="Products"
-              title="Millionaires Academy product catalog"
-            />
+          <div className="mx-auto max-w-2xl overflow-hidden rounded-[2.25rem] border border-stanBlack/10 bg-white p-3 shadow-stan">
+            <div className="rounded-[1.9rem] bg-stanBlack px-6 py-8 text-center text-warmWhite">
+              <p className="text-xs font-black uppercase tracking-[0.28em] text-mutedGold">
+                Products
+              </p>
+              <h1 className="mt-3 text-balance text-4xl font-black leading-tight text-white sm:text-5xl">
+                Pick your next move.
+              </h1>
+              <p className="mx-auto mt-4 max-w-lg text-sm font-semibold leading-7 text-white/76 sm:text-base">
+                Shop trainings, vendor lists, launch blueprints, and simple tools
+                built for focused execution.
+              </p>
+            </div>
           </div>
         </Container>
       </AnimatedSection>
 
-      <AnimatedSection className="pt-16">
+      <AnimatedSection className="pt-6">
         <Container>
-          <div className="rounded-[2rem] border border-neutralBorder bg-white p-6 shadow-soft">
+          <div className="mx-auto max-w-2xl rounded-[2rem] border border-stanBlack/10 bg-white p-4 shadow-stan">
             <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_220px] lg:items-center">
               <label className="relative block">
                 <span className="sr-only">Search products</span>
-                <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted" />
+                <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-stanBlack" />
                 <input
-                  className="w-full rounded-full border border-neutralBorder bg-cream/60 py-3 pl-11 pr-4 text-sm"
+                  className="w-full rounded-full border border-stanBlack/10 bg-stanSurface py-3 pl-11 pr-4 text-sm font-semibold text-stanBlack"
                   onChange={(event) => setSearchTerm(event.target.value)}
                   placeholder="Search courses, vendor lists, blueprints, or tools"
                   type="search"
                   value={searchTerm}
                 />
               </label>
-              <label className="flex items-center justify-between gap-3 rounded-full border border-neutralBorder bg-cream/40 px-4 py-3 text-sm text-charcoal">
-                <span className="font-medium">Sort</span>
+              <label className="flex items-center justify-between gap-3 rounded-full border border-stanBlack/10 bg-stanSurface px-4 py-3 text-sm font-semibold text-stanBlack">
+                <span>Sort</span>
                 <select
-                  className="bg-transparent text-sm"
+                  className="bg-transparent text-sm font-semibold"
                   onChange={(event) => setSortOption(event.target.value as SortOption)}
                   value={sortOption}
                 >
@@ -107,8 +113,8 @@ export const Shop = () => {
                   className={cn(
                     'rounded-full border px-4 py-2 text-sm font-medium transition',
                     selectedCategory === category
-                      ? 'border-emeraldDeep bg-emeraldDeep text-warmWhite'
-                      : 'border-neutralBorder bg-white text-charcoal hover:border-emeraldDeep hover:text-emeraldDeep',
+                      ? 'border-stanBlack bg-stanBlack text-warmWhite'
+                      : 'border-stanBlack/10 bg-stanSurface text-stanBlack hover:border-stanBlack',
                   )}
                   key={category}
                   onClick={() => setSelectedCategory(category)}
@@ -122,10 +128,10 @@ export const Shop = () => {
         </Container>
       </AnimatedSection>
 
-      <AnimatedSection className="pt-12">
+      <AnimatedSection className="pt-7">
         <Container>
           {filteredProducts.length ? (
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-4">
               {filteredProducts.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
