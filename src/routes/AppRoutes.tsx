@@ -3,6 +3,7 @@ import { PageShell } from '../components/layout/PageShell'
 import { About } from '../pages/About'
 import { BookSession } from '../pages/BookSession'
 import { Cart } from '../pages/Cart'
+import { Collections } from '../pages/Collections'
 import { Contact } from '../pages/Contact'
 import { Home } from '../pages/Home'
 import { NotFound } from '../pages/NotFound'
@@ -25,6 +26,7 @@ export const AppRoutes = () => (
       <Route element={<ShopifyWebsite />} path="/custom-website" />
       <Route element={<ShopifyWebsite />} path="/shopify-website" />
       <Route element={<BookSession />} path="/book-session" />
+      <Route element={<Collections />} path="/collections" />
       <Route element={<Shop />} path="/shop" />
       <Route element={<ProductDetail />} path="/shop/:id" />
       <Route element={<ProductDetail />} path="/product/:id" />
