@@ -1,11 +1,15 @@
 import { ArrowDown, BadgeCheck, ExternalLink, Sparkles, Star } from 'lucide-react'
-import logoPlaceholder from '../assets/images/logo-placeholder.svg'
 import { AnimatedSection } from '../components/common/AnimatedSection'
 import { Button } from '../components/common/Button'
 import { Container } from '../components/common/Container'
 import { ProductGrid } from '../components/store/ProductGrid'
 import { activeProducts } from '../utils/productUtils'
 import { usePageTitle } from '../utils/usePageTitle'
+
+const founderHeroImage =
+  'https://res.cloudinary.com/dctjy0klg/image/upload/v1777555983/WhatsApp_Image_2026-04-23_at_05.08.21_lz4ffr.jpg'
+const founderBioImage =
+  'https://res.cloudinary.com/dctjy0klg/image/upload/v1777555983/WhatsApp_Image_2026-04-23_at_04.53.36_ynx9j7.jpg'
 
 export const Home = () => {
   usePageTitle('Millionaires Academy | Digital Store')
@@ -23,12 +27,20 @@ export const Home = () => {
                 <div className="absolute -left-16 top-8 h-44 w-44 rounded-full bg-mutedGold/20 blur-3xl" />
                 <div className="absolute -right-12 bottom-4 h-40 w-40 rounded-full bg-burntOrange/20 blur-3xl" />
                 <div className="relative">
-                  <div className="mx-auto h-28 w-28 overflow-hidden rounded-full border-4 border-white bg-white shadow-premium">
+                  <div className="mx-auto overflow-hidden rounded-[2rem] border-4 border-white bg-white shadow-premium">
                     <img
-                      alt="Millionaires Academy"
-                      className="h-full w-full object-cover"
-                      src={logoPlaceholder}
+                      alt="Nicky Nicole, Founder of Millionaire Square"
+                      className="aspect-[4/5] w-full object-cover object-top sm:aspect-[16/12]"
+                      src={founderHeroImage}
                     />
+                    <div className="bg-white px-5 py-4 text-left">
+                      <p className="text-2xl font-black leading-tight text-stanBlack">
+                        Nicky Nicole
+                      </p>
+                      <p className="mt-1 text-sm font-extrabold uppercase tracking-[0.18em] text-mutedGold">
+                        Founder Millionaire Square
+                      </p>
+                    </div>
                   </div>
                   <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-extrabold backdrop-blur">
                     @millionairesacademy
@@ -79,6 +91,42 @@ export const Home = () => {
                     {item}
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </Container>
+      </AnimatedSection>
+
+      <AnimatedSection className="pt-8 sm:pt-10">
+        <Container>
+          <div className="mx-auto max-w-2xl overflow-hidden rounded-[2.25rem] border border-stanBlack/10 bg-white p-3 shadow-stan">
+            <div className="grid gap-5 rounded-[1.9rem] bg-stanSurface p-4 sm:grid-cols-[0.82fr_1fr] sm:items-center sm:p-5">
+              <div className="overflow-hidden rounded-[1.5rem] bg-white shadow-soft">
+                <img
+                  alt="Nicky Nicole founder portrait"
+                  className="aspect-[4/5] w-full object-cover object-top"
+                  src={founderBioImage}
+                />
+              </div>
+              <div className="px-1 py-2 sm:px-2">
+                <p className="text-xs font-black uppercase tracking-[0.28em] text-mutedGold">
+                  Founder Bio
+                </p>
+                <h2 className="mt-3 text-3xl font-black leading-tight text-stanBlack sm:text-4xl">
+                  Meet Nicky Nicole
+                </h2>
+                <div className="mt-4 space-y-4 text-sm font-semibold leading-7 text-muted sm:text-base">
+                  <p>
+                    Hi, I'm Nickie, the founder of this platform. I created this
+                    space to make starting and growing a business simpler for
+                    aspiring entrepreneurs.
+                  </p>
+                  <p>
+                    Whether you are launching your first venture or scaling an
+                    existing one, my goal is to connect you with the digital tools,
+                    vendor resources, and proven blueprints you need to succeed.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
